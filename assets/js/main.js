@@ -170,6 +170,11 @@
     loop: true,
     items: 1
   });
-
+$('.nav-menu ul').find('a').click(function(){
+    var $href = $(this).attr('href');
+    var $anchor = $($href).offset();
+    $('html,body').animate({scrollTop: $anchor.top - 80},'slow');
+    return false;
+});
 })(jQuery);
 
