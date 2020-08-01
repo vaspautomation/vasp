@@ -493,7 +493,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 992px) {
   #hero {
-    height: 100vh;
+    height: 55vh;
   }
   #hero .carousel-container {
     top: 8px;
@@ -2163,10 +2163,13 @@ section {
     text-transform: uppercase;
     background-color: #333;
     border-radius: 5px;
-	overflow:hidden;
+    overflow:hidden;
 }
-.grid-item  img{    width: 100%;
-    height: 100%;}
-    .services-section svg{width:50%;fill:#606062;min-height: 100px;}
-    .services-section svg:hover{fill:#ec3237;}
-    .services-section h5{font-size: 16px;}
+.grid-item  img{width: 100%; height: 100%;}
+.services-section svg{width:50%;fill:#606062;min-height: 100px;}
+.services-section svg:hover{fill:#ec3237;}
+.services-section h5{font-size: 16px;}
+@media (max-width: 768px) { 
+  .services-section svg{ width:30%; }
+  #footer .footer-top{padding:60px 20px 30px;}
+}
