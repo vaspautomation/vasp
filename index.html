@@ -1,577 +1,620 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-   <!-- Required meta tags -->
-   <meta content="" name="descriptison">
-   <meta content="" name="keywords">
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <title>VASP Automation</title>
-   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-   <link rel="manifest" href="assets/img/favicon/site.webmanifest">
-   <!-- Google Fonts -->
-   <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet">
-   <!-- Vendor CSS Files -->
-   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-   <!-- <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"> -->
-   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-   <!-- <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet"> -->
-   <!-- <link href="assets/vendor/venobox/venobox.css" rel="stylesheet"> -->
-   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-   <!-- Template Main CSS File -->
-   <link href="assets/css/style.css" rel="stylesheet">
-</head>
-
-<body>
-   <!-- ======= Header ======= -->
-   <header id="header" class="fixed-top ">
-      <div class="container d-flex align-items-center justify-content-between">
-         <!-- <h1 class="logo"><a href="index.html">VASP Automation</a></h1> -->
-         <!-- Uncomment below if you prefer to use an image logo -->
-         <a href="index.html" class="logo"><img src="assets/img/logo.jpg" alt="" class="img-fluid"></a>
-         <nav class="nav-menu d-none d-lg-block">
-            <ul>
-               <li class="active"><a href="index.html">Home</a></li>
-			   <li><a href="#services">Services</a></li>
-			    <li><a href="#gallery">Gallery</a></li>
-               <li><a href="#products">Products</a></li>
-               <li class="drop-down">
-                  <a href="#">Industries</a>
-                  <ul>
-                     <li><a href="">Automobile</a></li>
-                     <li><a href="">Cement</a></li>
-                     <li><a href="">Food</a></li>
-                     <li><a href="">Pharma</a></li>
-                     <li><a href="">Plastic</a></li>
-                  </ul>
-               </li>
-               <li><a href="#about-us">About Us</a></li>
-               <li><a href="#contact-us">Contact</a></li>
-            </ul>
-         </nav>
-         <!-- .nav-menu -->
-      </div>
-   </header>
-   <!-- End Header -->
-
-   <!-- ======= Hero Section ======= -->
-   <section id="hero">
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-         <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-         <div class="carousel-inner" role="listbox">
-            <!-- Slide 1 -->
-            <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
-               <div class="carousel-container">
-                  <div class="container">
-                     <h2 class="animate__animated animate__fadeInDown">Welcome to <span>VASP</span></h2>
-                     <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid.
-                        Sequi ea ut et est quaerat sequi nihil ut aliquam.</p>                     
-                  </div>
-               </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
-               <div class="carousel-container">
-                  <div class="container">
-                     <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-                     <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid.
-                        Sequi ea ut et est quaerat sequi nihil ut aliquam./p>                     
-                  </div>
-               </div>
-            </div>
-            <!-- Slide 3 -->
-            <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
-               <div class="carousel-container">
-                  <div class="container">
-                     <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                     <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid.
-                        Sequi ea ut et est quaerat sequi nihil ut aliquam. </p>                     
-                  </div>
-               </div>
-            </div>
+   <head>
+      <!-- Required meta tags -->
+      <meta content="" name="descriptison">
+      <meta content="" name="keywords">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>VASP Automation</title>
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+      <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+      <!-- Google Fonts -->
+      <link
+         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+         rel="stylesheet">
+      <!-- Vendor CSS Files -->
+      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+      <!-- <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"> -->
+      <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+      <!-- <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet"> -->
+      <!-- <link href="assets/vendor/venobox/venobox.css" rel="stylesheet"> -->
+      <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+      <!-- Template Main CSS File -->
+      <link href="assets/css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- ======= Header ======= -->
+      <header id="header" class="fixed-top ">
+         <div class="container d-flex align-items-center justify-content-between">
+            <!-- <h1 class="logo"><a href="index.html">VASP Automation</a></h1> -->
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <a href="index.html" class="logo"><img src="assets/img/logo.jpg" alt="" class="img-fluid"></a>
+            <nav class="nav-menu d-none d-lg-block">
+               <ul>
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#gallery">Gallery</a></li>
+                  <li><a href="#products">Products</a></li>
+                  <li class="drop-down">
+                     <a href="#">Industries</a>
+                     <ul>
+                        <li><a href="">Automobile</a></li>
+                        <li><a href="">Cement</a></li>
+                        <li><a href="">Food</a></li>
+                        <li><a href="">Pharma</a></li>
+                        <li><a href="">Plastic</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#about-us">About Us</a></li>
+                  <li><a href="#contact-us">Contact</a></li>
+               </ul>
+            </nav>
+            <!-- .nav-menu -->
          </div>
-         <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+      </header>
+      <!-- End Header -->
+      <!-- ======= Hero Section ======= -->
+      <section id="hero">
+         <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+            <div class="carousel-inner" role="listbox">
+               <!-- Slide 1 -->
+               <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
+                  <div class="carousel-container">
+                     <div class="container">
+                        <h2 class="animate__animated animate__fadeInDown">Welcome to <span>VASP</span></h2>                        
+                     </div>
+                  </div>
+               </div>
+               <!-- Slide 2 -->
+               <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">                  
+               </div>
+               <!-- Slide 3 -->
+               <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">                  
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
-         </a>
-         <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+            </a>
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-         </a>
-      </div>
-   </section>
-   <!-- End Hero -->
-   <!-- ======= Services Section ======= -->
-   <section id="services" class="portfolio services-section">
-      <div class="container">
-         <div class="section-title">
-            <h2>Our Services</h2>
+            </a>
          </div>
-         <div class="row">
-
-            <div class="col-md-2 col-sm-6 text-center">
-               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" x="0px" y="0px">
-                  <path
-                     d="M10.4,26.333,41.68,42.444A5.013,5.013,0,0,0,43.97,43H62V41H47.444a3.875,3.875,0,0,0,0-4H62V35H61V25H49V35H44.97a3.012,3.012,0,0,1-1.374-.333l-7.84-4.039,4.63-8.883L29.745,16.2l-4.657,8.934L12.751,18.777a6.946,6.946,0,0,0-1.592-.585c-.053-.017-.105-.036-.159-.05V8H2v2H4v2H6V10H9v8H2v2H6.556a3.875,3.875,0,0,0,0,4H2v2H9.03A3.012,3.012,0,0,1,10.4,26.333ZM51,27h3v2h2V27h3v8H51ZM30.6,18.9l2.66,1.387-.925,1.773,1.774.925.924-1.774,2.66,1.387-3.7,7.094L26.9,25.99Zm9.44,20.451L12.451,25.138A3.98,3.98,0,0,0,14,22c0-.119-.025-.231-.035-.348l27.584,14.21A3.98,3.98,0,0,0,40,39C40,39.119,40.025,39.231,40.035,39.347ZM10.781,20.159a2.016,2.016,0,1,1-.951-.142A5.091,5.091,0,0,1,10.781,20.159ZM43.808,40.981c-.078-.005-.154-.018-.231-.028A1.993,1.993,0,1,1,44,41C43.934,41,43.872,40.987,43.808,40.981Z" />
-                  <path
-                     d="M8,62H62V60H61V48h1V46H43.242L8.457,28.111c-.014-.007-.03-.01-.044-.017s-.043-.015-.065-.024A.99.99,0,0,0,8,28H2v2H3V60H2v2H8Zm1-2V30.639L21,36.81V60Zm14,0V37.839l2,1.028V60ZM44,48H55V60H44ZM27,39.9l11,5.657V60H27ZM40,60V46.618l2,1V60ZM59,48V60H57V48ZM5,30H7V60H5Z" />
-               </svg>
-               <h5>Conveyors</h5>
+      </section>
+      <!-- End Hero -->
+      <!-- ======= Intro Section ======= -->
+      <section id="intro" class="portfolio intro-section">
+         <div class="container">
+            <div class="row">
+               <div>
+                  <strong>VASP AUTOMATION</strong> is a Premier Engineering Company in India, manufacturing In-plant Automation systems like Conveyor lines; Custom built Automation Equipment for unit material handling, Packaging Machines, Special Purpose Machineries & Process Machineries, from Concept to commissioning.
+               </div>
+               <p class="mt-4">
+                  <strong>VASP AUTOMATION</strong> is automation and material handling solutions provider. We offer custom solutions with our wide range of conveyors and automation products for the food, beverage and manufacturing environments. We pride ourselves on listening to our customer’s problems, and offering cost effective solutions. Our staff of Mechanical, Electrical ,Electronics and Civil Engineers along with our Project Managers and Senior Account Managers work together to provide the best available service to solve your problems.
+               </p>
+               <p class="mt-4">
+                  We can help you with simple machine alterations to your production line, to increase productivity or to introduce additional packaging for the market place. We can also tackle the task of reworking an existing line with new equipment or moving complete lines and consolidation of production to single facilities. VASP AUTOMATION can be used as your Engineering Department when you face the challenge of expansion concurrently with production.
+               </p>
             </div>
-            <div class="col-md-2 col-sm-6 text-center">
-               <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100"
-                  xml:space="preserve">
-                  <g>
-                     <rect x="-468" width="185" height="99"></rect>
-                     <rect x="-276" y="-36" width="100" height="30"></rect><text transform="matrix(1 0 0 1 -210 -19.5)"
-                        fill="#000000" font-family="'Helvetica'" font-size="2.4">http://thenounproject.com</text><text
-                        transform="matrix(1 0 0 1 -268.834 -24.5)">
-                        <tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="6.1578">The Noun
-                           Project</tspan>
-                        <tspan x="1.12" y="4.8" fill="#000000" font-family="'Helvetica-Bold'" font-size="4">Icon
-                           Template</tspan>
-                     </text><text transform="matrix(1 0 0 1 -454.5 10.5)" fill="#000000" font-family="'Helvetica-Bold'"
-                        font-size="6.1578">Reminders</text>
-                     <line fill="#000000" stroke="#000000" stroke-miterlimit="10" x1="-268" y1="-14.5" x2="-258"
-                        y2="-14.5"></line>
-                     <line fill="#000000" stroke="#000000" stroke-miterlimit="10" x1="-455" y1="16.5" x2="-438"
-                        y2="16.5"></line>
+         </div>
+      </section>
+      <!-- ======= Clients Section ======= -->
+      <section id="clients" class="clients section-bg">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                  <img src="assets/img/spyran-logo.png" class="img-fluid" alt="">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                  <img src="assets/img/bombardier-logo.png" class="img-fluid" alt="">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                  <img src="assets/img/himile-logo.png" class="img-fluid" alt="">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                  <img src="assets/img/SRF-logo.png" class="img-fluid" alt="">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                  <img src="assets/img/TEL-logo.png" class="img-fluid" alt="">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                  <img src="assets/img/rockwool-logo.png" class="img-fluid" alt="">
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End Clients Section -->
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="portfolio services-section">
+         <div class="container">
+            <div class="section-title">
+               <h2>Our Services</h2>
+            </div>
+            <div class="row">
+               <div class="col-md-2 col-sm-6 text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 80" x="0px" y="0px">
+                     <path
+                        d="M10.4,26.333,41.68,42.444A5.013,5.013,0,0,0,43.97,43H62V41H47.444a3.875,3.875,0,0,0,0-4H62V35H61V25H49V35H44.97a3.012,3.012,0,0,1-1.374-.333l-7.84-4.039,4.63-8.883L29.745,16.2l-4.657,8.934L12.751,18.777a6.946,6.946,0,0,0-1.592-.585c-.053-.017-.105-.036-.159-.05V8H2v2H4v2H6V10H9v8H2v2H6.556a3.875,3.875,0,0,0,0,4H2v2H9.03A3.012,3.012,0,0,1,10.4,26.333ZM51,27h3v2h2V27h3v8H51ZM30.6,18.9l2.66,1.387-.925,1.773,1.774.925.924-1.774,2.66,1.387-3.7,7.094L26.9,25.99Zm9.44,20.451L12.451,25.138A3.98,3.98,0,0,0,14,22c0-.119-.025-.231-.035-.348l27.584,14.21A3.98,3.98,0,0,0,40,39C40,39.119,40.025,39.231,40.035,39.347ZM10.781,20.159a2.016,2.016,0,1,1-.951-.142A5.091,5.091,0,0,1,10.781,20.159ZM43.808,40.981c-.078-.005-.154-.018-.231-.028A1.993,1.993,0,1,1,44,41C43.934,41,43.872,40.987,43.808,40.981Z" />
+                     <path
+                        d="M8,62H62V60H61V48h1V46H43.242L8.457,28.111c-.014-.007-.03-.01-.044-.017s-.043-.015-.065-.024A.99.99,0,0,0,8,28H2v2H3V60H2v2H8Zm1-2V30.639L21,36.81V60Zm14,0V37.839l2,1.028V60ZM44,48H55V60H44ZM27,39.9l11,5.657V60H27ZM40,60V46.618l2,1V60ZM59,48V60H57V48ZM5,30H7V60H5Z" />
+                  </svg>
+                  <h5>Conveyors</h5>
+               </div>
+               <div class="col-md-2 col-sm-6 text-center">
+                  <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100"
+                     xml:space="preserve">
                      <g>
+                        <rect x="-468" width="185" height="99"></rect>
+                        <rect x="-276" y="-36" width="100" height="30"></rect>
+                        <text transform="matrix(1 0 0 1 -210 -19.5)"
+                           fill="#000000" font-family="'Helvetica'" font-size="2.4">http://thenounproject.com</text>
+                        <text
+                           transform="matrix(1 0 0 1 -268.834 -24.5)">
+                           <tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="6.1578">The Noun
+                              Project
+                           </tspan>
+                           <tspan x="1.12" y="4.8" fill="#000000" font-family="'Helvetica-Bold'" font-size="4">Icon
+                              Template
+                           </tspan>
+                        </text>
+                        <text transform="matrix(1 0 0 1 -454.5 10.5)" fill="#000000" font-family="'Helvetica-Bold'"
+                           font-size="6.1578">Reminders</text>
+                        <line fill="#000000" stroke="#000000" stroke-miterlimit="10" x1="-268" y1="-14.5" x2="-258"
+                           y2="-14.5"></line>
+                        <line fill="#000000" stroke="#000000" stroke-miterlimit="10" x1="-455" y1="16.5" x2="-438"
+                           y2="16.5"></line>
                         <g>
                            <g>
-                              <rect x="-446.802" y="31.318" fill="#000000" width="8.721" height="8.642"></rect>
-                              <path fill="#000000"
-                                 d="M-440.455,42.312h4.747v-4.703h-4.747V42.312z M-435.266,42.749h-5.63V37.17h5.63V42.749      L-435.266,42.749z M-442.221,44.062h8.279v-8.203h-8.279V44.062L-442.221,44.062z M-433.5,44.5h-9.163v-9.079h9.163V44.5      L-433.5,44.5z">
+                              <g>
+                                 <rect x="-446.802" y="31.318" fill="#000000" width="8.721" height="8.642"></rect>
+                                 <path fill="#000000"
+                                    d="M-440.455,42.312h4.747v-4.703h-4.747V42.312z M-435.266,42.749h-5.63V37.17h5.63V42.749      L-435.266,42.749z M-442.221,44.062h8.279v-8.203h-8.279V44.062L-442.221,44.062z M-433.5,44.5h-9.163v-9.079h9.163V44.5      L-433.5,44.5z">
+                                 </path>
+                                 <polygon fill="#000000"
+                                    points="-442.149,44.133 -442.292,43.991 -434.013,35.787 -433.871,35.929     ">
+                                 </polygon>
+                              </g>
+                           </g>
+                        </g>
+                        <rect x="-455" y="58" fill="none" width="35" height="32.5"></rect>
+                        <text
+                           transform="matrix(1 0 0 1 -455 60.1572)">
+                           <tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Strokes</tspan>
+                           <tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Try to keep strokes
+                              at 4px
+                           </tspan>
+                           <tspan x="0" y="10" fill="#000000" font-family="'Helvetica'" font-size="2.4">Minimum stroke
+                              weight is 2px
+                           </tspan>
+                           <tspan x="0" y="14.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">For thicker
+                              strokes use even 
+                           </tspan>
+                           <tspan x="0" y="17.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">numbers: 6px, 8px
+                              etc.
+                           </tspan>
+                           <tspan x="0" y="22" fill="#000000" font-family="'Helvetica-Bold'" font-size="2.4">Remember to
+                              expand strokes 
+                           </tspan>
+                           <tspan x="0" y="25" fill="#000000" font-family="'Helvetica-Bold'" font-size="2.4">before saving
+                              as an SVG 
+                           </tspan>
+                        </text>
+                        <rect x="-412.5" y="58" fill="none" width="35" height="32.5"></rect>
+                        <text
+                           transform="matrix(1 0 0 1 -412.5 60.1572)">
+                           <tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Size</tspan>
+                           <tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Cannot be wider or
+                              taller than 
+                           </tspan>
+                           <tspan x="0" y="8.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">100px (artboard
+                              size)
+                           </tspan>
+                           <tspan x="0" y="13.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Scale your icon
+                              to fill as much of 
+                           </tspan>
+                           <tspan x="0" y="16.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">the artboard as
+                              possible
+                           </tspan>
+                        </text>
+                        <rect x="-370" y="58" fill="none" width="35" height="32.5"></rect>
+                        <text
+                           transform="matrix(1 0 0 1 -370 60.1572)">
+                           <tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Ungroup</tspan>
+                           <tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">If your design has
+                              more than one 
+                           </tspan>
+                           <tspan x="0" y="8" fill="#000000" font-family="'Helvetica'" font-size="2.4">shape, make sure to
+                              ungroup
+                           </tspan>
+                        </text>
+                        <rect x="-326" y="58" fill="none" width="35" height="32.5"></rect>
+                        <text
+                           transform="matrix(1 0 0 1 -326 60.1572)">
+                           <tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Save as</tspan>
+                           <tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Save as .SVG and
+                              make sure 
+                           </tspan>
+                           <tspan x="0" y="8" fill="#000000" font-family="'Helvetica'" font-size="2.4">“Use Artboards” is
+                              checked
+                           </tspan>
+                        </text>
+                        <text transform="matrix(1.0074 0 0 1 -401.542 30.5933)" fill="#000000"
+                           font-family="'Helvetica'" font-size="2.5731">100px</text>
+                        <text
+                           transform="matrix(1.0074 0 0 1 -317 39)" fill="#000000" font-family="'Helvetica-Bold'"
+                           font-size="5.1462">.SVG</text>
+                        <rect x="-402.514" y="34.815" fill="#000000" width="10.261" height="10.185"></rect>
+                        <rect x="-402.477" y="31.766" fill="#000000" width="0.522" height="2.337"></rect>
+                        <rect x="-392.812" y="31.766" fill="#000000" width="0.523" height="2.337"></rect>
+                        <rect x="-403" y="32.337" fill="#000000" width="11.233" height="0.572"></rect>
+                        <g>
+                           <rect x="-359.805" y="33.844" fill="#000000" width="10.305" height="10.156"></rect>
+                           <rect x="-352.809" y="28.707" fill="#000000" width="3.308" height="3.261"></rect>
+                        </g>
+                        <rect x="-454.5" y="22.5" fill="#000000" stroke="#000000" stroke-miterlimit="10" width="30"
+                           height="30"></rect>
+                        <rect x="-412.5" y="22.5" fill="#000000" stroke="#000000" stroke-miterlimit="10" width="30"
+                           height="30"></rect>
+                        <rect x="-369.5" y="22.5" fill="#000000" stroke="#000000" stroke-miterlimit="10" width="30"
+                           height="30"></rect>
+                        <rect x="-325.5" y="22.5" fill="#000000" stroke="#000000" stroke-miterlimit="10" width="30"
+                           height="30"></rect>
+                     </g>
+                     <g>
+                        <g>
+                           <path
+                              d="M-241.384,51.528c4.111,2.507,8.986,3.344,15.384,3.344s11.545-1.256,15.384-3.342c1.705-0.927,4.28-4.448,6.797-9.002    c10.399-0.473,16.714-6.496,16.857-12.412c0.09-3.687-2.324-8.009-9.133-9.247c0.069-0.708,0.111-1.393,0.111-2.044    c0-3.087,0-11.289-30.017-11.289s-30.017,8.202-30.017,11.29C-256.017,29.476-245.682,48.907-241.384,51.528z M-199.149,20.545    l-0.179,4.458l0,0L-199.149,20.545z M-196.882,26h0.002c3.46,0,5.512,1.996,5.455,4.369c-0.069,2.813-3.322,6.87-9.988,7.956    C-199.516,34.265-197.85,30-196.882,26z M-249.318,18.827c0-2.536,10.439-4.592,23.318-4.592s23.318,2.056,23.318,4.592    s-10.439,4.592-23.318,4.592S-249.318,21.363-249.318,18.827z">
+                           </path>
+                           <path
+                              d="M-177.191,63.217c-0.486-0.2-1.008-0.19-1.463-0.016l-0.73,0.297l-2.503,1.005c-1.577,0.633-3.438,0.615-5.159-0.098    c-1.707-0.709-2.906-2.082-3.569-3.648c-0.639-1.576-0.77-3.41-0.061-5.119c0.713-1.721,2.017-3.048,3.575-3.717l2.483-1.059    l0.727-0.307c0.442-0.199,0.822-0.557,1.022-1.045c0.405-0.977-0.044-2.093-1.005-2.489l-0.148-0.063    c-2.917-1.014-6.173-0.936-9.26,0.379c-4.48,1.917-7.439,6.021-8.106,10.569l-7.079,2.926L-226,68.095l-17.532-7.264l-7.079-2.926    c-0.667-4.548-3.626-8.652-8.106-10.569c-3.087-1.314-6.343-1.393-9.26-0.379l-0.148,0.063c-0.961,0.396-1.41,1.513-1.005,2.489    c0.2,0.488,0.58,0.846,1.022,1.045l0.727,0.307l2.483,1.059c1.559,0.669,2.862,1.996,3.575,3.717    c0.709,1.709,0.578,3.543-0.061,5.119c-0.663,1.566-1.862,2.939-3.569,3.648c-1.721,0.713-3.582,0.73-5.159,0.098l-2.503-1.005    l-0.73-0.297c-0.455-0.175-0.977-0.185-1.463,0.016c-0.977,0.403-1.447,1.511-1.051,2.472l0.063,0.148    c1.345,2.78,3.702,5.023,6.815,6.279c4.522,1.812,9.52,1.012,13.215-1.735l7.066,2.919l5.067,2.101l-9.925,4.112    c-1.581,0.658-2.883,1.978-3.589,3.68c-1.413,3.414,0.2,7.315,3.615,8.728c1.702,0.707,3.558,0.718,5.141,0.065l22.39-9.278    l22.39,9.278c1.583,0.652,3.438,0.642,5.141-0.065c3.415-1.412,5.028-5.313,3.615-8.728c-0.706-1.702-2.008-3.021-3.589-3.68    l-9.925-4.112l5.067-2.101l7.066-2.919c3.695,2.747,8.692,3.548,13.215,1.735c3.113-1.256,5.471-3.499,6.815-6.279l0.063-0.148    C-175.744,64.728-176.215,63.62-177.191,63.217z M-248.146,86.404c-0.504,1.217-1.901,1.794-3.118,1.291    c-1.216-0.504-1.794-1.901-1.29-3.118c0.506-1.217,1.901-1.795,3.117-1.291C-248.22,83.79-247.642,85.188-248.146,86.404z     M-202.563,83.286c1.216-0.504,2.611,0.074,3.117,1.291c0.504,1.217-0.074,2.614-1.29,3.118c-1.217,0.503-2.614-0.074-3.118-1.291    S-203.78,83.79-202.563,83.286z">
+                           </path>
+                        </g>
+                        <path
+                           d="M-73.521,47.434c-1.031,1.034-1.879,0.685-1.879-0.776V26.626c0-1.46-0.841-1.81-1.872-0.779l-21.593,21.587   c-1.031,1.034-2.003,0.69-2.157-0.761l-4.746-44.03C-105.926,1.188-107.25,0-108.708,0h-9.403c-1.464,0-2.72,1.194-2.797,2.655   l-5.031,94.691c-0.08,1.46,1.055,2.654,2.513,2.654h70.716c1.458,0,2.654-1.197,2.654-2.657V26.626c0-1.46-0.844-1.81-1.875-0.779   L-73.521,47.434z M-75.4,84.671c0,1.46-1.19,2.654-2.651,2.654h-20.031c-1.464,0-2.654-1.194-2.654-2.654V64.639   c0-1.46,1.19-2.654,2.654-2.654h20.031c1.461,0,2.651,1.194,2.651,2.654V84.671z">
+                        </path>
+                        <path
+                           d="M99.471,43.688l-14.556-8.454l14.556-8.456c0.327-0.189,0.529-0.54,0.529-0.918s-0.202-0.726-0.529-0.915L66.67,6.01   c-0.327-0.189-0.733-0.192-1.061,0.002L50,15.077L34.394,6.012C34.063,5.818,33.66,5.82,33.33,6.01L0.529,24.945   C0.202,25.134,0,25.481,0,25.86s0.202,0.729,0.529,0.918l14.556,8.456L0.529,43.688C0.202,43.877,0,44.228,0,44.606   c0,0.378,0.202,0.729,0.529,0.917l15.606,9.007V74.14c0,0.379,0.202,0.729,0.529,0.918l32.801,18.935   c0.022,0.013,0.051,0.018,0.076,0.03c0.031,0.016,0.06,0.026,0.087,0.036c0.12,0.044,0.24,0.074,0.366,0.074   c0.125,0,0.245-0.03,0.362-0.074c0.031-0.01,0.06-0.021,0.087-0.036c0.028-0.01,0.057-0.018,0.08-0.03l32.801-18.935   c0.327-0.189,0.528-0.539,0.528-0.918V54.537l15.617-9.014c0.327-0.189,0.526-0.54,0.529-0.917   C100,44.228,99.798,43.877,99.471,43.688z M66.144,8.152l30.679,17.713l-14.024,8.147L52.116,16.299L66.144,8.152z M3.178,25.865   L33.859,8.152l14.021,8.145L17.196,34.01L3.178,25.865z M3.175,44.601l14.021-8.142l30.685,17.71l-14.021,8.146L3.175,44.601z    M48.937,91.236l-30.682-17.71V55.754l15.075,8.702c0.166,0.095,0.348,0.144,0.529,0.144c0.187,0,0.368-0.049,0.534-0.146   l14.551-8.452L48.937,91.236z M51.056,52.048c0,0.585-0.476,1.058-1.061,1.058c-0.586,0-1.062-0.473-1.062-1.058V18.421   c0-0.588,0.476-1.061,1.062-1.061c0.585,0,1.061,0.473,1.061,1.061V52.048z M81.734,73.526l-30.679,17.71l0.011-35.227   l14.543,8.444c0.327,0.191,0.733,0.191,1.061,0.002l15.064-8.696V73.526z M66.144,62.314l-14.024-8.146l30.679-17.715l14.024,8.147   L66.144,62.314z">
+                        </path>
+                        <g>
+                           <path
+                              d="M187.998,44.917c2.422-5.869,12.434-30.137,13.147-31.879C201.086,5.838,195.21,0,187.998,0s-13.087,5.838-13.146,13.038    C175.566,14.779,185.577,39.048,187.998,44.917z">
+                           </path>
+                           <path
+                              d="M220.812,20.79c-2.485-2.485-5.788-3.854-9.299-3.854c-3.474,0-6.744,1.338-9.216,3.772L189.049,52.55l30.178-12.557    l1.66-0.692c2.435-2.474,3.774-5.743,3.774-9.216C224.663,26.575,223.295,23.273,220.812,20.79z">
+                           </path>
+                           <path
+                              d="M173.702,20.712c-2.475-2.436-5.741-3.776-9.218-3.776c-3.512,0-6.812,1.368-9.295,3.85    c-5.099,5.103-5.123,13.386-0.077,18.516l8.968,3.731l22.868,9.517L173.702,20.712z">
+                           </path>
+                           <path
+                              d="M154.745,40.453c-7.25,0-13.146,5.898-13.146,13.147c0,7.248,5.896,13.146,13.146,13.146c0.046,0,0.093,0.006,0.135,0.017    L186.525,53.6l-31.652-13.172C154.827,40.444,154.785,40.453,154.745,40.453z">
+                           </path>
+                           <path
+                              d="M220.81,86.408c5.092-5.092,5.123-13.379,0.082-18.51l-31.84-13.249l13.243,31.836c2.477,2.435,5.746,3.775,9.22,3.775    C215.026,90.261,218.326,88.892,220.81,86.408z">
+                           </path>
+                           <path
+                              d="M221.121,66.768c0.042-0.015,0.087-0.021,0.131-0.021c7.249,0,13.149-5.898,13.149-13.146    c0-7.249-5.9-13.147-13.149-13.147c-0.049,0-0.095-0.006-0.142-0.018L189.471,53.6L221.121,66.768z">
+                           </path>
+                           <path
+                              d="M187.998,100c7.217,0,13.116-5.872,13.147-13.088c0-0.062,0.011-0.12,0.028-0.176l-13.173-31.663l-13.176,31.673    c0.021,0.052,0.031,0.108,0.031,0.166C174.886,94.128,180.781,100,187.998,100z">
+                           </path>
+                           <path
+                              d="M186.948,54.648l-31.825,13.238c-5.057,5.126-5.032,13.423,0.066,18.521c2.483,2.483,5.783,3.853,9.295,3.853    c3.477,0,6.748-1.342,9.225-3.779L186.948,54.648z">
+                           </path>
+                        </g>
+                        <g>
+                           <g>
+                              <path
+                                 d="M373.827,39.966L326,15.883l-47.827,24.083c-1.948,0.978-2.73,3.353-1.75,5.301c0.983,1.949,3.355,2.73,5.299,1.75     l2.008-1.01V80.83c0,1.814,1.478,3.287,3.291,3.287h11.513h54.932h11.515c1.813,0,3.289-1.473,3.289-3.287V46.007l2.007,1.01     c0.566,0.287,1.174,0.422,1.772,0.422c1.443,0,2.833-0.795,3.529-2.172C376.558,43.319,375.775,40.944,373.827,39.966z      M354.124,58.35h-56.248v-8.114c0-0.355,0.302-0.657,0.657-0.657h54.932c0.357,0,0.659,0.302,0.659,0.657V58.35z M297.876,60.982     h56.248v9.1h-56.248V60.982z M298.533,81.486c-0.355,0-0.657-0.303-0.657-0.656v-8.117h56.248v8.117     c0,0.354-0.302,0.656-0.659,0.656H298.533z M365.636,80.83c0,0.354-0.301,0.656-0.656,0.656h-8.289     c0.044-0.213,0.063-0.432,0.063-0.656V50.236c0-1.816-1.473-3.289-3.289-3.289h-54.932c-1.814,0-3.287,1.473-3.287,3.289V80.83     c0,0.225,0.02,0.443,0.063,0.656h-8.289c-0.355,0-0.656-0.303-0.656-0.656V44.682L326,24.719l39.636,19.963V80.83z">
                               </path>
-                              <polygon fill="#000000"
-                                 points="-442.149,44.133 -442.292,43.991 -434.013,35.787 -433.871,35.929     ">
-                              </polygon>
+                              <path
+                                 d="M316.956,34.832v5.264c0,1.812,1.471,3.284,3.287,3.284h11.514c1.814,0,3.287-1.473,3.287-3.284v-5.264     c0-1.814-1.473-3.292-3.287-3.292h-11.514C318.427,31.54,316.956,33.018,316.956,34.832z M320.243,34.172h4.443v1.973h-5.103     v-1.313C319.584,34.476,319.885,34.172,320.243,34.172z M319.584,40.096v-1.321h5.103v1.976h-4.443     C319.885,40.75,319.584,40.451,319.584,40.096z M331.757,40.75h-4.443v-1.976h5.101v1.321     C332.414,40.451,332.112,40.75,331.757,40.75z M332.414,34.832v1.313h-5.101v-1.973h4.443     C332.112,34.172,332.414,34.476,332.414,34.832z">
+                              </path>
                            </g>
                         </g>
                      </g>
-                     <rect x="-455" y="58" fill="none" width="35" height="32.5"></rect><text
-                        transform="matrix(1 0 0 1 -455 60.1572)">
-                        <tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Strokes</tspan>
-                        <tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Try to keep strokes
-                           at 4px</tspan>
-                        <tspan x="0" y="10" fill="#000000" font-family="'Helvetica'" font-size="2.4">Minimum stroke
-                           weight is 2px</tspan>
-                        <tspan x="0" y="14.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">For thicker
-                           strokes use even </tspan>
-                        <tspan x="0" y="17.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">numbers: 6px, 8px
-                           etc.</tspan>
-                        <tspan x="0" y="22" fill="#000000" font-family="'Helvetica-Bold'" font-size="2.4">Remember to
-                           expand strokes </tspan>
-                        <tspan x="0" y="25" fill="#000000" font-family="'Helvetica-Bold'" font-size="2.4">before saving
-                           as an SVG </tspan>
-                     </text>
-                     <rect x="-412.5" y="58" fill="none" width="35" height="32.5"></rect><text
-                        transform="matrix(1 0 0 1 -412.5 60.1572)">
-                        <tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Size</tspan>
-                        <tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Cannot be wider or
-                           taller than </tspan>
-                        <tspan x="0" y="8.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">100px (artboard
-                           size)</tspan>
-                        <tspan x="0" y="13.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Scale your icon
-                           to fill as much of </tspan>
-                        <tspan x="0" y="16.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">the artboard as
-                           possible</tspan>
-                     </text>
-                     <rect x="-370" y="58" fill="none" width="35" height="32.5"></rect><text
-                        transform="matrix(1 0 0 1 -370 60.1572)">
-                        <tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Ungroup</tspan>
-                        <tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">If your design has
-                           more than one </tspan>
-                        <tspan x="0" y="8" fill="#000000" font-family="'Helvetica'" font-size="2.4">shape, make sure to
-                           ungroup</tspan>
-                     </text>
-                     <rect x="-326" y="58" fill="none" width="35" height="32.5"></rect><text
-                        transform="matrix(1 0 0 1 -326 60.1572)">
-                        <tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Save as</tspan>
-                        <tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Save as .SVG and
-                           make sure </tspan>
-                        <tspan x="0" y="8" fill="#000000" font-family="'Helvetica'" font-size="2.4">“Use Artboards” is
-                           checked</tspan>
-                     </text><text transform="matrix(1.0074 0 0 1 -401.542 30.5933)" fill="#000000"
-                        font-family="'Helvetica'" font-size="2.5731">100px</text><text
-                        transform="matrix(1.0074 0 0 1 -317 39)" fill="#000000" font-family="'Helvetica-Bold'"
-                        font-size="5.1462">.SVG</text>
-                     <rect x="-402.514" y="34.815" fill="#000000" width="10.261" height="10.185"></rect>
-                     <rect x="-402.477" y="31.766" fill="#000000" width="0.522" height="2.337"></rect>
-                     <rect x="-392.812" y="31.766" fill="#000000" width="0.523" height="2.337"></rect>
-                     <rect x="-403" y="32.337" fill="#000000" width="11.233" height="0.572"></rect>
-                     <g>
-                        <rect x="-359.805" y="33.844" fill="#000000" width="10.305" height="10.156"></rect>
-                        <rect x="-352.809" y="28.707" fill="#000000" width="3.308" height="3.261"></rect>
-                     </g>
-                     <rect x="-454.5" y="22.5" fill="#000000" stroke="#000000" stroke-miterlimit="10" width="30"
-                        height="30"></rect>
-                     <rect x="-412.5" y="22.5" fill="#000000" stroke="#000000" stroke-miterlimit="10" width="30"
-                        height="30"></rect>
-                     <rect x="-369.5" y="22.5" fill="#000000" stroke="#000000" stroke-miterlimit="10" width="30"
-                        height="30"></rect>
-                     <rect x="-325.5" y="22.5" fill="#000000" stroke="#000000" stroke-miterlimit="10" width="30"
-                        height="30"></rect>
-                  </g>
-                  <g>
-                     <g>
-                        <path
-                           d="M-241.384,51.528c4.111,2.507,8.986,3.344,15.384,3.344s11.545-1.256,15.384-3.342c1.705-0.927,4.28-4.448,6.797-9.002    c10.399-0.473,16.714-6.496,16.857-12.412c0.09-3.687-2.324-8.009-9.133-9.247c0.069-0.708,0.111-1.393,0.111-2.044    c0-3.087,0-11.289-30.017-11.289s-30.017,8.202-30.017,11.29C-256.017,29.476-245.682,48.907-241.384,51.528z M-199.149,20.545    l-0.179,4.458l0,0L-199.149,20.545z M-196.882,26h0.002c3.46,0,5.512,1.996,5.455,4.369c-0.069,2.813-3.322,6.87-9.988,7.956    C-199.516,34.265-197.85,30-196.882,26z M-249.318,18.827c0-2.536,10.439-4.592,23.318-4.592s23.318,2.056,23.318,4.592    s-10.439,4.592-23.318,4.592S-249.318,21.363-249.318,18.827z">
-                        </path>
-                        <path
-                           d="M-177.191,63.217c-0.486-0.2-1.008-0.19-1.463-0.016l-0.73,0.297l-2.503,1.005c-1.577,0.633-3.438,0.615-5.159-0.098    c-1.707-0.709-2.906-2.082-3.569-3.648c-0.639-1.576-0.77-3.41-0.061-5.119c0.713-1.721,2.017-3.048,3.575-3.717l2.483-1.059    l0.727-0.307c0.442-0.199,0.822-0.557,1.022-1.045c0.405-0.977-0.044-2.093-1.005-2.489l-0.148-0.063    c-2.917-1.014-6.173-0.936-9.26,0.379c-4.48,1.917-7.439,6.021-8.106,10.569l-7.079,2.926L-226,68.095l-17.532-7.264l-7.079-2.926    c-0.667-4.548-3.626-8.652-8.106-10.569c-3.087-1.314-6.343-1.393-9.26-0.379l-0.148,0.063c-0.961,0.396-1.41,1.513-1.005,2.489    c0.2,0.488,0.58,0.846,1.022,1.045l0.727,0.307l2.483,1.059c1.559,0.669,2.862,1.996,3.575,3.717    c0.709,1.709,0.578,3.543-0.061,5.119c-0.663,1.566-1.862,2.939-3.569,3.648c-1.721,0.713-3.582,0.73-5.159,0.098l-2.503-1.005    l-0.73-0.297c-0.455-0.175-0.977-0.185-1.463,0.016c-0.977,0.403-1.447,1.511-1.051,2.472l0.063,0.148    c1.345,2.78,3.702,5.023,6.815,6.279c4.522,1.812,9.52,1.012,13.215-1.735l7.066,2.919l5.067,2.101l-9.925,4.112    c-1.581,0.658-2.883,1.978-3.589,3.68c-1.413,3.414,0.2,7.315,3.615,8.728c1.702,0.707,3.558,0.718,5.141,0.065l22.39-9.278    l22.39,9.278c1.583,0.652,3.438,0.642,5.141-0.065c3.415-1.412,5.028-5.313,3.615-8.728c-0.706-1.702-2.008-3.021-3.589-3.68    l-9.925-4.112l5.067-2.101l7.066-2.919c3.695,2.747,8.692,3.548,13.215,1.735c3.113-1.256,5.471-3.499,6.815-6.279l0.063-0.148    C-175.744,64.728-176.215,63.62-177.191,63.217z M-248.146,86.404c-0.504,1.217-1.901,1.794-3.118,1.291    c-1.216-0.504-1.794-1.901-1.29-3.118c0.506-1.217,1.901-1.795,3.117-1.291C-248.22,83.79-247.642,85.188-248.146,86.404z     M-202.563,83.286c1.216-0.504,2.611,0.074,3.117,1.291c0.504,1.217-0.074,2.614-1.29,3.118c-1.217,0.503-2.614-0.074-3.118-1.291    S-203.78,83.79-202.563,83.286z">
-                        </path>
-                     </g>
-                     <path
-                        d="M-73.521,47.434c-1.031,1.034-1.879,0.685-1.879-0.776V26.626c0-1.46-0.841-1.81-1.872-0.779l-21.593,21.587   c-1.031,1.034-2.003,0.69-2.157-0.761l-4.746-44.03C-105.926,1.188-107.25,0-108.708,0h-9.403c-1.464,0-2.72,1.194-2.797,2.655   l-5.031,94.691c-0.08,1.46,1.055,2.654,2.513,2.654h70.716c1.458,0,2.654-1.197,2.654-2.657V26.626c0-1.46-0.844-1.81-1.875-0.779   L-73.521,47.434z M-75.4,84.671c0,1.46-1.19,2.654-2.651,2.654h-20.031c-1.464,0-2.654-1.194-2.654-2.654V64.639   c0-1.46,1.19-2.654,2.654-2.654h20.031c1.461,0,2.651,1.194,2.651,2.654V84.671z">
-                     </path>
-                     <path
-                        d="M99.471,43.688l-14.556-8.454l14.556-8.456c0.327-0.189,0.529-0.54,0.529-0.918s-0.202-0.726-0.529-0.915L66.67,6.01   c-0.327-0.189-0.733-0.192-1.061,0.002L50,15.077L34.394,6.012C34.063,5.818,33.66,5.82,33.33,6.01L0.529,24.945   C0.202,25.134,0,25.481,0,25.86s0.202,0.729,0.529,0.918l14.556,8.456L0.529,43.688C0.202,43.877,0,44.228,0,44.606   c0,0.378,0.202,0.729,0.529,0.917l15.606,9.007V74.14c0,0.379,0.202,0.729,0.529,0.918l32.801,18.935   c0.022,0.013,0.051,0.018,0.076,0.03c0.031,0.016,0.06,0.026,0.087,0.036c0.12,0.044,0.24,0.074,0.366,0.074   c0.125,0,0.245-0.03,0.362-0.074c0.031-0.01,0.06-0.021,0.087-0.036c0.028-0.01,0.057-0.018,0.08-0.03l32.801-18.935   c0.327-0.189,0.528-0.539,0.528-0.918V54.537l15.617-9.014c0.327-0.189,0.526-0.54,0.529-0.917   C100,44.228,99.798,43.877,99.471,43.688z M66.144,8.152l30.679,17.713l-14.024,8.147L52.116,16.299L66.144,8.152z M3.178,25.865   L33.859,8.152l14.021,8.145L17.196,34.01L3.178,25.865z M3.175,44.601l14.021-8.142l30.685,17.71l-14.021,8.146L3.175,44.601z    M48.937,91.236l-30.682-17.71V55.754l15.075,8.702c0.166,0.095,0.348,0.144,0.529,0.144c0.187,0,0.368-0.049,0.534-0.146   l14.551-8.452L48.937,91.236z M51.056,52.048c0,0.585-0.476,1.058-1.061,1.058c-0.586,0-1.062-0.473-1.062-1.058V18.421   c0-0.588,0.476-1.061,1.062-1.061c0.585,0,1.061,0.473,1.061,1.061V52.048z M81.734,73.526l-30.679,17.71l0.011-35.227   l14.543,8.444c0.327,0.191,0.733,0.191,1.061,0.002l15.064-8.696V73.526z M66.144,62.314l-14.024-8.146l30.679-17.715l14.024,8.147   L66.144,62.314z">
-                     </path>
-                     <g>
-                        <path
-                           d="M187.998,44.917c2.422-5.869,12.434-30.137,13.147-31.879C201.086,5.838,195.21,0,187.998,0s-13.087,5.838-13.146,13.038    C175.566,14.779,185.577,39.048,187.998,44.917z">
-                        </path>
-                        <path
-                           d="M220.812,20.79c-2.485-2.485-5.788-3.854-9.299-3.854c-3.474,0-6.744,1.338-9.216,3.772L189.049,52.55l30.178-12.557    l1.66-0.692c2.435-2.474,3.774-5.743,3.774-9.216C224.663,26.575,223.295,23.273,220.812,20.79z">
-                        </path>
-                        <path
-                           d="M173.702,20.712c-2.475-2.436-5.741-3.776-9.218-3.776c-3.512,0-6.812,1.368-9.295,3.85    c-5.099,5.103-5.123,13.386-0.077,18.516l8.968,3.731l22.868,9.517L173.702,20.712z">
-                        </path>
-                        <path
-                           d="M154.745,40.453c-7.25,0-13.146,5.898-13.146,13.147c0,7.248,5.896,13.146,13.146,13.146c0.046,0,0.093,0.006,0.135,0.017    L186.525,53.6l-31.652-13.172C154.827,40.444,154.785,40.453,154.745,40.453z">
-                        </path>
-                        <path
-                           d="M220.81,86.408c5.092-5.092,5.123-13.379,0.082-18.51l-31.84-13.249l13.243,31.836c2.477,2.435,5.746,3.775,9.22,3.775    C215.026,90.261,218.326,88.892,220.81,86.408z">
-                        </path>
-                        <path
-                           d="M221.121,66.768c0.042-0.015,0.087-0.021,0.131-0.021c7.249,0,13.149-5.898,13.149-13.146    c0-7.249-5.9-13.147-13.149-13.147c-0.049,0-0.095-0.006-0.142-0.018L189.471,53.6L221.121,66.768z">
-                        </path>
-                        <path
-                           d="M187.998,100c7.217,0,13.116-5.872,13.147-13.088c0-0.062,0.011-0.12,0.028-0.176l-13.173-31.663l-13.176,31.673    c0.021,0.052,0.031,0.108,0.031,0.166C174.886,94.128,180.781,100,187.998,100z">
-                        </path>
-                        <path
-                           d="M186.948,54.648l-31.825,13.238c-5.057,5.126-5.032,13.423,0.066,18.521c2.483,2.483,5.783,3.853,9.295,3.853    c3.477,0,6.748-1.342,9.225-3.779L186.948,54.648z">
-                        </path>
-                     </g>
-                     <g>
-                        <g>
-                           <path
-                              d="M373.827,39.966L326,15.883l-47.827,24.083c-1.948,0.978-2.73,3.353-1.75,5.301c0.983,1.949,3.355,2.73,5.299,1.75     l2.008-1.01V80.83c0,1.814,1.478,3.287,3.291,3.287h11.513h54.932h11.515c1.813,0,3.289-1.473,3.289-3.287V46.007l2.007,1.01     c0.566,0.287,1.174,0.422,1.772,0.422c1.443,0,2.833-0.795,3.529-2.172C376.558,43.319,375.775,40.944,373.827,39.966z      M354.124,58.35h-56.248v-8.114c0-0.355,0.302-0.657,0.657-0.657h54.932c0.357,0,0.659,0.302,0.659,0.657V58.35z M297.876,60.982     h56.248v9.1h-56.248V60.982z M298.533,81.486c-0.355,0-0.657-0.303-0.657-0.656v-8.117h56.248v8.117     c0,0.354-0.302,0.656-0.659,0.656H298.533z M365.636,80.83c0,0.354-0.301,0.656-0.656,0.656h-8.289     c0.044-0.213,0.063-0.432,0.063-0.656V50.236c0-1.816-1.473-3.289-3.289-3.289h-54.932c-1.814,0-3.287,1.473-3.287,3.289V80.83     c0,0.225,0.02,0.443,0.063,0.656h-8.289c-0.355,0-0.656-0.303-0.656-0.656V44.682L326,24.719l39.636,19.963V80.83z">
-                           </path>
-                           <path
-                              d="M316.956,34.832v5.264c0,1.812,1.471,3.284,3.287,3.284h11.514c1.814,0,3.287-1.473,3.287-3.284v-5.264     c0-1.814-1.473-3.292-3.287-3.292h-11.514C318.427,31.54,316.956,33.018,316.956,34.832z M320.243,34.172h4.443v1.973h-5.103     v-1.313C319.584,34.476,319.885,34.172,320.243,34.172z M319.584,40.096v-1.321h5.103v1.976h-4.443     C319.885,40.75,319.584,40.451,319.584,40.096z M331.757,40.75h-4.443v-1.976h5.101v1.321     C332.414,40.451,332.112,40.75,331.757,40.75z M332.414,34.832v1.313h-5.101v-1.973h4.443     C332.112,34.172,332.414,34.476,332.414,34.832z">
-                           </path>
+                  </svg>
+                  <h5>Packaging</h5>
+               </div>
+               <div class="col-md-2 col-sm-6 text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 75"
+                     version="1.1" x="0px" y="0px">
+                     <g stroke="none" stroke-width="1" fill-rule="evenodd">
+                        <g transform="translate(-478.000000, -469.000000)">
+                           <g transform="translate(478.000000, 469.000000)">
+                              <path
+                                 d="M4,60 L10,60 C10.5522847,60 11,59.5522847 11,59 L11,45 C11,44.4477153 10.5522847,44 10,44 L4,44 C3.44771525,44 3,44.4477153 3,45 L3,59 C3,59.5522847 3.44771525,60 4,60 Z M5,58 L5,46 L9,46 L9,58 L5,58 Z" />
+                              <path
+                                 d="M50,60 L56,60 C56.5522847,60 57,59.5522847 57,59 L57,45 C57,44.4477153 56.5522847,44 56,44 L50,44 C49.4477153,44 49,44.4477153 49,45 L49,59 C49,59.5522847 49.4477153,60 50,60 Z M51,58 L51,46 L55,46 L55,58 L51,58 Z" />
+                              <path
+                                 d="M1,46 L59,46 C59.5522847,46 60,45.5522847 60,45 L60,33 C60,32.4477153 59.5522847,32 59,32 L1,32 C0.44771525,32 0,32.4477153 0,33 L0,45 C0,45.5522847 0.44771525,46 1,46 Z M2,34 L58,34 L58,44 L2,44 L2,34 Z" />
+                              <path
+                                 d="M1,60 L59,60 C59.5522847,60 60,59.5522847 60,59 C60,58.4477153 59.5522847,58 59,58 L1,58 C0.44771525,58 0,58.4477153 0,59 C0,59.5522847 0.44771525,60 1,60 Z" />
+                              <path
+                                 d="M39,34 L59,34 C59.5522847,34 60,33.5522847 60,33 L60,1 C60,0.44771525 59.5522847,0 59,0 L39,0 C38.4477153,0 38,0.44771525 38,1 L38,33 C38,33.5522847 38.4477153,34 39,34 Z M40,2 L58,2 L58,32 L40,32 L40,2 Z" />
+                              <path
+                                 d="M43,14 L55,14 C55.5522847,14 56,13.5522847 56,13 L56,5 C56,4.44771525 55.5522847,4 55,4 L43,4 C42.4477153,4 42,4.44771525 42,5 L42,13 C42,13.5522847 42.4477153,14 43,14 Z M44,6 L54,6 L54,12 L44,12 L44,6 Z" />
+                              <path
+                                 d="M42,17 L42,20 C42,20.5522847 42.4477153,21 43,21 C43.5522847,21 44,20.5522847 44,20 L44,17 C44,16.4477153 43.5522847,16 43,16 C42.4477153,16 42,16.4477153 42,17 Z" />
+                              <path
+                                 d="M54,17 L54,20 C54,20.5522847 54.4477153,21 55,21 C55.5522847,21 56,20.5522847 56,20 L56,17 C56,16.4477153 55.5522847,16 55,16 C54.4477153,16 54,16.4477153 54,17 Z" />
+                              <path
+                                 d="M50,17 L50,20 C50,20.5522847 50.4477153,21 51,21 C51.5522847,21 52,20.5522847 52,20 L52,17 C52,16.4477153 51.5522847,16 51,16 C50.4477153,16 50,16.4477153 50,17 Z" />
+                              <path
+                                 d="M46,17 L46,20 C46,20.5522847 46.4477153,21 47,21 C47.5522847,21 48,20.5522847 48,20 L48,17 C48,16.4477153 47.5522847,16 47,16 C46.4477153,16 46,16.4477153 46,17 Z" />
+                              <path
+                                 d="M43,29 L47,29 C47.5522847,29 48,28.5522847 48,28 L48,24 C48,23.4477153 47.5522847,23 47,23 L43,23 C42.4477153,23 42,23.4477153 42,24 L42,28 C42,28.5522847 42.4477153,29 43,29 Z M44,27 L44,25 L46,25 L46,27 L44,27 Z" />
+                              <path
+                                 d="M51,29 L55,29 C55.5522847,29 56,28.5522847 56,28 L56,24 C56,23.4477153 55.5522847,23 55,23 L51,23 C50.4477153,23 50,23.4477153 50,24 L50,28 C50,28.5522847 50.4477153,29 51,29 Z M52,27 L52,25 L54,25 L54,27 L52,27 Z" />
+                              <path
+                                 d="M11,39 C11,39.5527153 10.5527153,40 10,40 C9.44728475,40 9,39.5527153 9,39 C9,38.4472847 9.44728475,38 10,38 C10.5527153,38 11,38.4472847 11,39 Z M13,39 C13,37.3427153 11.6572847,36 10,36 C8.34271525,36 7,37.3427153 7,39 C7,40.6572847 8.34271525,42 10,42 C11.6572847,42 13,40.6572847 13,39 Z" />
+                              <path
+                                 d="M19,39 C19,39.5527153 18.5527153,40 18,40 C17.4472847,40 17,39.5527153 17,39 C17,38.4472847 17.4472847,38 18,38 C18.5527153,38 19,38.4472847 19,39 Z M21,39 C21,37.3427153 19.6572847,36 18,36 C16.3427153,36 15,37.3427153 15,39 C15,40.6572847 16.3427153,42 18,42 C19.6572847,42 21,40.6572847 21,39 Z" />
+                              <path
+                                 d="M27,39 C27,39.5527153 26.5527153,40 26,40 C25.4472847,40 25,39.5527153 25,39 C25,38.4472847 25.4472847,38 26,38 C26.5527153,38 27,38.4472847 27,39 Z M29,39 C29,37.3427153 27.6572847,36 26,36 C24.3427153,36 23,37.3427153 23,39 C23,40.6572847 24.3427153,42 26,42 C27.6572847,42 29,40.6572847 29,39 Z" />
+                              <path
+                                 d="M35,39 C35,39.5527153 34.5527153,40 34,40 C33.4472847,40 33,39.5527153 33,39 C33,38.4472847 33.4472847,38 34,38 C34.5527153,38 35,38.4472847 35,39 Z M37,39 C37,37.3427153 35.6572847,36 34,36 C32.3427153,36 31,37.3427153 31,39 C31,40.6572847 32.3427153,42 34,42 C35.6572847,42 37,40.6572847 37,39 Z" />
+                              <path
+                                 d="M43,39 C43,39.5527153 42.5527153,40 42,40 C41.4472847,40 41,39.5527153 41,39 C41,38.4472847 41.4472847,38 42,38 C42.5527153,38 43,38.4472847 43,39 Z M45,39 C45,37.3427153 43.6572847,36 42,36 C40.3427153,36 39,37.3427153 39,39 C39,40.6572847 40.3427153,42 42,42 C43.6572847,42 45,40.6572847 45,39 Z" />
+                              <path
+                                 d="M51,39 C51,39.5527153 50.5527153,40 50,40 C49.4472847,40 49,39.5527153 49,39 C49,38.4472847 49.4472847,38 50,38 C50.5527153,38 51,38.4472847 51,39 Z M53,39 C53,37.3427153 51.6572847,36 50,36 C48.3427153,36 47,37.3427153 47,39 C47,40.6572847 48.3427153,42 50,42 C51.6572847,42 53,40.6572847 53,39 Z" />
+                              <path
+                                 d="M1,34 L39,34 C39.5522847,34 40,33.5522847 40,33 L40,1 C40,0.44771525 39.5522847,0 39,0 L1,0 C0.44771525,0 0,0.44771525 0,1 L0,33 C0,33.5522847 0.44771525,34 1,34 Z M2,2 L38,2 L38,32 L2,32 L2,2 Z" />
+                              <path
+                                 d="M1,34 L7,34 C7.55228475,34 8,33.5522847 8,33 L8,1 C8,0.44771525 7.55228475,0 7,0 L1,0 C0.44771525,0 0,0.44771525 0,1 L0,33 C0,33.5522847 0.44771525,34 1,34 Z M2,2 L6,2 L6,32 L2,32 L2,2 Z" />
+                              <path
+                                 d="M16,34 L30,34 C30.5522847,34 31,33.5522847 31,33 L31,23 C31,22.4477153 30.5522847,22 30,22 L16,22 C15.4477153,22 15,22.4477153 15,23 L15,33 C15,33.5522847 15.4477153,34 16,34 Z M17,24 L29,24 L29,32 L17,32 L17,24 Z" />
+                              <path
+                                 d="M19,6 L27,6 C27.5522847,6 28,5.55228475 28,5 L28,1 C28,0.44771525 27.5522847,0 27,0 L19,0 C18.4477153,0 18,0.44771525 18,1 L18,5 C18,5.55228475 18.4477153,6 19,6 Z M20,4 L20,2 L26,2 L26,4 L20,4 Z" />
+                              <path
+                                 d="M22,6 L24,6 L24,10 C24,10.5527153 23.5527153,11 23,11 C22.4472847,11 22,10.5527153 22,10 L22,6 Z M23,13 C24.6572847,13 26,11.6572847 26,10 L26,5 C26,4.44771525 25.5522847,4 25,4 L21,4 C20.4477153,4 20,4.44771525 20,5 L20,10 C20,11.6572847 21.3427153,13 23,13 Z" />
+                              <path
+                                 d="M24,15 L24,12 C24,11.4477153 23.5522847,11 23,11 C22.4477153,11 22,11.4477153 22,12 L22,15 C22,15.5522847 22.4477153,16 23,16 C23.5522847,16 24,15.5522847 24,15 Z" />
+                              <path
+                                 d="M16,26 L12,26 C11.4477153,26 11,26.4477153 11,27 C11,27.5522847 11.4477153,28 12,28 L16,28 C16.5522847,28 17,27.5522847 17,27 C17,26.4477153 16.5522847,26 16,26 Z" />
+                              <path
+                                 d="M11,25 L11,29 C11,29.5522847 11.4477153,30 12,30 C12.5522847,30 13,29.5522847 13,29 L13,25 C13,24.4477153 12.5522847,24 12,24 C11.4477153,24 11,24.4477153 11,25 Z" />
+                              <path
+                                 d="M30,28 L34,28 C34.5522847,28 35,27.5522847 35,27 C35,26.4477153 34.5522847,26 34,26 L30,26 C29.4477153,26 29,26.4477153 29,27 C29,27.5522847 29.4477153,28 30,28 Z" />
+                              <path
+                                 d="M33,25 L33,29 C33,29.5522847 33.4477153,30 34,30 C34.5522847,30 35,29.5522847 35,29 L35,25 C35,24.4477153 34.5522847,24 34,24 C33.4477153,24 33,24.4477153 33,25 Z" />
+                              <path
+                                 d="M20,24 L26,24 C26.5522847,24 27,23.5522847 27,23 L27,19 C27,18.4477153 26.5522847,18 26,18 L20,18 C19.4477153,18 19,18.4477153 19,19 L19,23 C19,23.5522847 19.4477153,24 20,24 Z M21,22 L21,20 L25,20 L25,22 L21,22 Z" />
+                           </g>
                         </g>
                      </g>
-                  </g>
-               </svg>
-               <h5>Packaging</h5>
-            </div>
-
-            <div class="col-md-2 col-sm-6 text-center">
-               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
-                  y="0px" viewBox="0 0 64 80" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-                  <g>
-                     <rect x="15.067" y="37.269" transform="matrix(0.9702 -0.2424 0.2424 0.9702 -8.7978 5.0365)"
-                        width="2" height="2" />
-                     <rect x="16.037" y="41.149" transform="matrix(0.9702 -0.2422 0.2422 0.9702 -9.701 5.3811)"
-                        width="2" height="2" />
-                     <rect x="17.008" y="45.03" transform="matrix(0.9702 -0.2422 0.2422 0.9702 -10.6119 5.7316)"
-                        width="2" height="2" />
+                  </svg>
+                  <h5>Factory Automation</h5>
+               </div>
+               <div class="col-md-2 col-sm-6 text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
+                     y="0px" viewBox="0 0 64 80" style="enable-background:new 0 0 64 64;" xml:space="preserve">
                      <path
-                        d="M14,18c-1.654,0-3,1.346-3,3s1.346,3,3,3s3-1.346,3-3S15.654,18,14,18z M14,22c-0.551,0-1-0.449-1-1s0.449-1,1-1   s1,0.449,1,1S14.551,22,14,22z" />
+                        d="M28,34h5c0.553,0,1-0.447,1-1V12c0-0.352-0.185-0.677-0.485-0.857l-15-9c-0.316-0.189-0.713-0.189-1.029,0l-15,9  C2.185,11.323,2,11.648,2,12v21c0,0.553,0.447,1,1,1h5c0.553,0,1-0.447,1-1V17h18v16C27,33.553,27.447,34,28,34z M8,15  c-0.553,0-1,0.447-1,1v16H4V12.566l14-8.4l14,8.4V32h-3V16c0-0.553-0.447-1-1-1H8z" />
                      <path
-                        d="M45,33c1.654,0,3-1.346,3-3s-1.346-3-3-3s-3,1.346-3,3S43.346,33,45,33z M45,29c0.551,0,1,0.449,1,1s-0.449,1-1,1   s-1-0.449-1-1S44.449,29,45,29z" />
+                        d="M21,20h-6c-0.553,0-1,0.447-1,1v5h-2c-0.553,0-1,0.447-1,1v6c0,0.553,0.447,1,1,1h12c0.553,0,1-0.447,1-1v-6  c0-0.553-0.447-1-1-1h-2v-5C22,20.447,21.553,20,21,20z M16,22h4v4h-4V22z M17,32h-4v-4h4V32z M23,28v4h-4v-4H23z" />
                      <path
-                        d="M63.114,39.848L55.521,29h-3.6c-0.135-0.935-0.453-1.809-0.92-2.587V7h-2V5c0-2.206-1.794-4-4-4s-4,1.794-4,4v2h-2v5H29v-2   H7c-3.309,0-6,2.691-6,6s2.691,6,6,6h0.08c0.282,1.956,1.369,3.652,2.92,4.736V33H8.465l-4.589,6.883l4.029,10.072l-2.556,5.111   C2.902,55.389,1,57.466,1,60v3h30v-3c0-2.534-1.902-4.611-4.349-4.934l-2.708-5.415L19.781,33H18v-6.264   c1.551-1.085,2.638-2.781,2.92-4.736H29v-2h10v6.413c-0.467,0.778-0.786,1.652-0.92,2.587h-3.6l-7.594,10.848L33,57.171V60   c0,1.654,1.346,3,3,3h18c1.654,0,3-1.346,3-3v-2.829L63.114,39.848z M43,45h4v4h-4V45z M36,43c-0.352,0-0.686,0.072-1,0.184v-2.675   l6.297-4.58C42.373,36.604,43.64,37,45,37s2.627-0.396,3.703-1.071L55,40.509v2.675C54.686,43.072,54.352,43,54,43H36z M45,25   c2.757,0,5,2.243,5,5s-2.243,5-5,5s-5-2.243-5-5S42.243,25,45,25z M60.886,40.152L57,51.162V46v-6.509l-6.732-4.896   c0.867-0.993,1.455-2.23,1.652-3.595h2.559L60.886,40.152z M43,5c0-1.103,0.897-2,2-2s2,0.897,2,2v2h-4V5z M49,9v15.264   C47.865,23.47,46.487,23,45,23s-2.865,0.47-4,1.264V9H49z M29,60v1H3v-1c0-1.654,1.346-3,3-3h20C27.654,57,29,58.346,29,60z    M24.388,55H7.618l2-4h12.787L24.388,55z M21.719,49H9.677l-3.553-8.883L9.535,35h8.684L21.719,49z M16,33h-4v-5.295   C12.634,27.895,13.305,28,14,28s1.366-0.105,2-0.295V33z M14,26c-2.757,0-5-2.243-5-5s2.243-5,5-5s5,2.243,5,5S16.757,26,14,26z    M27,20h-6.08c-0.488-3.387-3.401-6-6.92-6s-6.432,2.613-6.92,6H7c-2.206,0-4-1.794-4-4s1.794-4,4-4h20V20z M29,18v-4h10v4H29z    M35.521,31h2.559c0.197,1.365,0.785,2.602,1.652,3.595L33,39.491V46v5.162l-3.886-11.01L35.521,31z M47,61h-4v-4h4V61z M55,60   c0,0.551-0.449,1-1,1h-5v-6h-8v6h-5c-0.551,0-1-0.449-1-1v-6v-8c0-0.551,0.449-1,1-1h5v6h8v-6h5c0.551,0,1,0.449,1,1v8V60z" />
-                     <rect x="45" y="19" width="2" height="2" />
-                     <rect x="45" y="11" width="2" height="2" />
-                     <rect x="45" y="15" width="2" height="2" />
-                  </g>
-               </svg>
-               <h5>Factory Automation</h5>
-            </div>
-            <div class="col-md-2 col-sm-6 text-center">
-               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
-                  y="0px" viewBox="0 0 64 80" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-                  <path
-                     d="M28,34h5c0.553,0,1-0.447,1-1V12c0-0.352-0.185-0.677-0.485-0.857l-15-9c-0.316-0.189-0.713-0.189-1.029,0l-15,9  C2.185,11.323,2,11.648,2,12v21c0,0.553,0.447,1,1,1h5c0.553,0,1-0.447,1-1V17h18v16C27,33.553,27.447,34,28,34z M8,15  c-0.553,0-1,0.447-1,1v16H4V12.566l14-8.4l14,8.4V32h-3V16c0-0.553-0.447-1-1-1H8z" />
-                  <path
-                     d="M21,20h-6c-0.553,0-1,0.447-1,1v5h-2c-0.553,0-1,0.447-1,1v6c0,0.553,0.447,1,1,1h12c0.553,0,1-0.447,1-1v-6  c0-0.553-0.447-1-1-1h-2v-5C22,20.447,21.553,20,21,20z M16,22h4v4h-4V22z M17,32h-4v-4h4V32z M23,28v4h-4v-4H23z" />
-                  <path
-                     d="M50,19H37c-0.553,0-1,0.447-1,1v11c0,0.553,0.447,1,1,1h1.184c0.414,1.161,1.514,2,2.816,2s2.402-0.839,2.816-2h5.369  c0.414,1.161,1.514,2,2.816,2s2.402-0.839,2.816-2H57c0.553,0,1-0.447,1-1v-4c0-0.155-0.036-0.309-0.105-0.447l-2-4  C55.725,22.214,55.379,22,55,22h-4v-2C51,19.447,50.553,19,50,19z M41,32c-0.552,0-1-0.448-1-1s0.448-1,1-1s1,0.448,1,1  S41.552,32,41,32z M49,30h-5.184c-0.414-1.161-1.514-2-2.816-2s-2.402,0.839-2.816,2H38v-9h11V30z M52,32c-0.552,0-1-0.448-1-1  s0.448-1,1-1s1,0.448,1,1S52.552,32,52,32z M54.382,24L56,27.236V30h-1.184c-0.414-1.161-1.514-2-2.816-2  c-0.352,0-0.686,0.072-1,0.184V24H54.382z" />
-                  <path
-                     d="M12,54c-2.206,0-4,1.794-4,4s1.794,4,4,4s4-1.794,4-4S14.206,54,12,54z M12,60c-1.103,0-2-0.897-2-2s0.897-2,2-2  s2,0.897,2,2S13.103,60,12,60z" />
-                  <path
-                     d="M34,58c0-2.206-1.794-4-4-4s-4,1.794-4,4s1.794,4,4,4S34,60.206,34,58z M28,58c0-1.103,0.897-2,2-2s2,0.897,2,2  s-0.897,2-2,2S28,59.103,28,58z" />
-                  <path
-                     d="M51,58c0-2.206-1.794-4-4-4s-4,1.794-4,4s1.794,4,4,4S51,60.206,51,58z M45,58c0-1.103,0.897-2,2-2s2,0.897,2,2  s-0.897,2-2,2S45,59.103,45,58z" />
-                  <rect x="60" y="30" width="2" height="2" />
-                  <path
-                     d="M60,40H12c-0.553,0-1,0.447-1,1v7l-1.2-1.6L8.2,47.6l3,4c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l3-4L14.2,46.4  L13,48v-6h16v6l-1.2-1.6L26.2,47.6l3,4c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l3-4L32.2,46.4L31,48v-6h15v6l-1.2-1.6  L43.2,47.6l3,4c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l3-4L49.2,46.4L48,48v-6h13c0.553,0,1-0.447,1-1v-7h-2V40z" />
-               </svg>
-               <h5>Intra logistics</h5>
-            </div>
-            <div class="col-md-2 col-sm-6 col-xs-6 text-center">
-               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 75"
-                  version="1.1" x="0px" y="0px">
-                  <g stroke="none" stroke-width="1" fill-rule="evenodd">
-                     <g transform="translate(-478.000000, -469.000000)">
-                        <g transform="translate(478.000000, 469.000000)">
-                           <path
-                              d="M4,60 L10,60 C10.5522847,60 11,59.5522847 11,59 L11,45 C11,44.4477153 10.5522847,44 10,44 L4,44 C3.44771525,44 3,44.4477153 3,45 L3,59 C3,59.5522847 3.44771525,60 4,60 Z M5,58 L5,46 L9,46 L9,58 L5,58 Z" />
-                           <path
-                              d="M50,60 L56,60 C56.5522847,60 57,59.5522847 57,59 L57,45 C57,44.4477153 56.5522847,44 56,44 L50,44 C49.4477153,44 49,44.4477153 49,45 L49,59 C49,59.5522847 49.4477153,60 50,60 Z M51,58 L51,46 L55,46 L55,58 L51,58 Z" />
-                           <path
-                              d="M1,46 L59,46 C59.5522847,46 60,45.5522847 60,45 L60,33 C60,32.4477153 59.5522847,32 59,32 L1,32 C0.44771525,32 0,32.4477153 0,33 L0,45 C0,45.5522847 0.44771525,46 1,46 Z M2,34 L58,34 L58,44 L2,44 L2,34 Z" />
-                           <path
-                              d="M1,60 L59,60 C59.5522847,60 60,59.5522847 60,59 C60,58.4477153 59.5522847,58 59,58 L1,58 C0.44771525,58 0,58.4477153 0,59 C0,59.5522847 0.44771525,60 1,60 Z" />
-                           <path
-                              d="M39,34 L59,34 C59.5522847,34 60,33.5522847 60,33 L60,1 C60,0.44771525 59.5522847,0 59,0 L39,0 C38.4477153,0 38,0.44771525 38,1 L38,33 C38,33.5522847 38.4477153,34 39,34 Z M40,2 L58,2 L58,32 L40,32 L40,2 Z" />
-                           <path
-                              d="M43,14 L55,14 C55.5522847,14 56,13.5522847 56,13 L56,5 C56,4.44771525 55.5522847,4 55,4 L43,4 C42.4477153,4 42,4.44771525 42,5 L42,13 C42,13.5522847 42.4477153,14 43,14 Z M44,6 L54,6 L54,12 L44,12 L44,6 Z" />
-                           <path
-                              d="M42,17 L42,20 C42,20.5522847 42.4477153,21 43,21 C43.5522847,21 44,20.5522847 44,20 L44,17 C44,16.4477153 43.5522847,16 43,16 C42.4477153,16 42,16.4477153 42,17 Z" />
-                           <path
-                              d="M54,17 L54,20 C54,20.5522847 54.4477153,21 55,21 C55.5522847,21 56,20.5522847 56,20 L56,17 C56,16.4477153 55.5522847,16 55,16 C54.4477153,16 54,16.4477153 54,17 Z" />
-                           <path
-                              d="M50,17 L50,20 C50,20.5522847 50.4477153,21 51,21 C51.5522847,21 52,20.5522847 52,20 L52,17 C52,16.4477153 51.5522847,16 51,16 C50.4477153,16 50,16.4477153 50,17 Z" />
-                           <path
-                              d="M46,17 L46,20 C46,20.5522847 46.4477153,21 47,21 C47.5522847,21 48,20.5522847 48,20 L48,17 C48,16.4477153 47.5522847,16 47,16 C46.4477153,16 46,16.4477153 46,17 Z" />
-                           <path
-                              d="M43,29 L47,29 C47.5522847,29 48,28.5522847 48,28 L48,24 C48,23.4477153 47.5522847,23 47,23 L43,23 C42.4477153,23 42,23.4477153 42,24 L42,28 C42,28.5522847 42.4477153,29 43,29 Z M44,27 L44,25 L46,25 L46,27 L44,27 Z" />
-                           <path
-                              d="M51,29 L55,29 C55.5522847,29 56,28.5522847 56,28 L56,24 C56,23.4477153 55.5522847,23 55,23 L51,23 C50.4477153,23 50,23.4477153 50,24 L50,28 C50,28.5522847 50.4477153,29 51,29 Z M52,27 L52,25 L54,25 L54,27 L52,27 Z" />
-                           <path
-                              d="M11,39 C11,39.5527153 10.5527153,40 10,40 C9.44728475,40 9,39.5527153 9,39 C9,38.4472847 9.44728475,38 10,38 C10.5527153,38 11,38.4472847 11,39 Z M13,39 C13,37.3427153 11.6572847,36 10,36 C8.34271525,36 7,37.3427153 7,39 C7,40.6572847 8.34271525,42 10,42 C11.6572847,42 13,40.6572847 13,39 Z" />
-                           <path
-                              d="M19,39 C19,39.5527153 18.5527153,40 18,40 C17.4472847,40 17,39.5527153 17,39 C17,38.4472847 17.4472847,38 18,38 C18.5527153,38 19,38.4472847 19,39 Z M21,39 C21,37.3427153 19.6572847,36 18,36 C16.3427153,36 15,37.3427153 15,39 C15,40.6572847 16.3427153,42 18,42 C19.6572847,42 21,40.6572847 21,39 Z" />
-                           <path
-                              d="M27,39 C27,39.5527153 26.5527153,40 26,40 C25.4472847,40 25,39.5527153 25,39 C25,38.4472847 25.4472847,38 26,38 C26.5527153,38 27,38.4472847 27,39 Z M29,39 C29,37.3427153 27.6572847,36 26,36 C24.3427153,36 23,37.3427153 23,39 C23,40.6572847 24.3427153,42 26,42 C27.6572847,42 29,40.6572847 29,39 Z" />
-                           <path
-                              d="M35,39 C35,39.5527153 34.5527153,40 34,40 C33.4472847,40 33,39.5527153 33,39 C33,38.4472847 33.4472847,38 34,38 C34.5527153,38 35,38.4472847 35,39 Z M37,39 C37,37.3427153 35.6572847,36 34,36 C32.3427153,36 31,37.3427153 31,39 C31,40.6572847 32.3427153,42 34,42 C35.6572847,42 37,40.6572847 37,39 Z" />
-                           <path
-                              d="M43,39 C43,39.5527153 42.5527153,40 42,40 C41.4472847,40 41,39.5527153 41,39 C41,38.4472847 41.4472847,38 42,38 C42.5527153,38 43,38.4472847 43,39 Z M45,39 C45,37.3427153 43.6572847,36 42,36 C40.3427153,36 39,37.3427153 39,39 C39,40.6572847 40.3427153,42 42,42 C43.6572847,42 45,40.6572847 45,39 Z" />
-                           <path
-                              d="M51,39 C51,39.5527153 50.5527153,40 50,40 C49.4472847,40 49,39.5527153 49,39 C49,38.4472847 49.4472847,38 50,38 C50.5527153,38 51,38.4472847 51,39 Z M53,39 C53,37.3427153 51.6572847,36 50,36 C48.3427153,36 47,37.3427153 47,39 C47,40.6572847 48.3427153,42 50,42 C51.6572847,42 53,40.6572847 53,39 Z" />
-                           <path
-                              d="M1,34 L39,34 C39.5522847,34 40,33.5522847 40,33 L40,1 C40,0.44771525 39.5522847,0 39,0 L1,0 C0.44771525,0 0,0.44771525 0,1 L0,33 C0,33.5522847 0.44771525,34 1,34 Z M2,2 L38,2 L38,32 L2,32 L2,2 Z" />
-                           <path
-                              d="M1,34 L7,34 C7.55228475,34 8,33.5522847 8,33 L8,1 C8,0.44771525 7.55228475,0 7,0 L1,0 C0.44771525,0 0,0.44771525 0,1 L0,33 C0,33.5522847 0.44771525,34 1,34 Z M2,2 L6,2 L6,32 L2,32 L2,2 Z" />
-                           <path
-                              d="M16,34 L30,34 C30.5522847,34 31,33.5522847 31,33 L31,23 C31,22.4477153 30.5522847,22 30,22 L16,22 C15.4477153,22 15,22.4477153 15,23 L15,33 C15,33.5522847 15.4477153,34 16,34 Z M17,24 L29,24 L29,32 L17,32 L17,24 Z" />
-                           <path
-                              d="M19,6 L27,6 C27.5522847,6 28,5.55228475 28,5 L28,1 C28,0.44771525 27.5522847,0 27,0 L19,0 C18.4477153,0 18,0.44771525 18,1 L18,5 C18,5.55228475 18.4477153,6 19,6 Z M20,4 L20,2 L26,2 L26,4 L20,4 Z" />
-                           <path
-                              d="M22,6 L24,6 L24,10 C24,10.5527153 23.5527153,11 23,11 C22.4472847,11 22,10.5527153 22,10 L22,6 Z M23,13 C24.6572847,13 26,11.6572847 26,10 L26,5 C26,4.44771525 25.5522847,4 25,4 L21,4 C20.4477153,4 20,4.44771525 20,5 L20,10 C20,11.6572847 21.3427153,13 23,13 Z" />
-                           <path
-                              d="M24,15 L24,12 C24,11.4477153 23.5522847,11 23,11 C22.4477153,11 22,11.4477153 22,12 L22,15 C22,15.5522847 22.4477153,16 23,16 C23.5522847,16 24,15.5522847 24,15 Z" />
-                           <path
-                              d="M16,26 L12,26 C11.4477153,26 11,26.4477153 11,27 C11,27.5522847 11.4477153,28 12,28 L16,28 C16.5522847,28 17,27.5522847 17,27 C17,26.4477153 16.5522847,26 16,26 Z" />
-                           <path
-                              d="M11,25 L11,29 C11,29.5522847 11.4477153,30 12,30 C12.5522847,30 13,29.5522847 13,29 L13,25 C13,24.4477153 12.5522847,24 12,24 C11.4477153,24 11,24.4477153 11,25 Z" />
-                           <path
-                              d="M30,28 L34,28 C34.5522847,28 35,27.5522847 35,27 C35,26.4477153 34.5522847,26 34,26 L30,26 C29.4477153,26 29,26.4477153 29,27 C29,27.5522847 29.4477153,28 30,28 Z" />
-                           <path
-                              d="M33,25 L33,29 C33,29.5522847 33.4477153,30 34,30 C34.5522847,30 35,29.5522847 35,29 L35,25 C35,24.4477153 34.5522847,24 34,24 C33.4477153,24 33,24.4477153 33,25 Z" />
-                           <path
-                              d="M20,24 L26,24 C26.5522847,24 27,23.5522847 27,23 L27,19 C27,18.4477153 26.5522847,18 26,18 L20,18 C19.4477153,18 19,18.4477153 19,19 L19,23 C19,23.5522847 19.4477153,24 20,24 Z M21,22 L21,20 L25,20 L25,22 L21,22 Z" />
-                        </g>
+                        d="M50,19H37c-0.553,0-1,0.447-1,1v11c0,0.553,0.447,1,1,1h1.184c0.414,1.161,1.514,2,2.816,2s2.402-0.839,2.816-2h5.369  c0.414,1.161,1.514,2,2.816,2s2.402-0.839,2.816-2H57c0.553,0,1-0.447,1-1v-4c0-0.155-0.036-0.309-0.105-0.447l-2-4  C55.725,22.214,55.379,22,55,22h-4v-2C51,19.447,50.553,19,50,19z M41,32c-0.552,0-1-0.448-1-1s0.448-1,1-1s1,0.448,1,1  S41.552,32,41,32z M49,30h-5.184c-0.414-1.161-1.514-2-2.816-2s-2.402,0.839-2.816,2H38v-9h11V30z M52,32c-0.552,0-1-0.448-1-1  s0.448-1,1-1s1,0.448,1,1S52.552,32,52,32z M54.382,24L56,27.236V30h-1.184c-0.414-1.161-1.514-2-2.816-2  c-0.352,0-0.686,0.072-1,0.184V24H54.382z" />
+                     <path
+                        d="M12,54c-2.206,0-4,1.794-4,4s1.794,4,4,4s4-1.794,4-4S14.206,54,12,54z M12,60c-1.103,0-2-0.897-2-2s0.897-2,2-2  s2,0.897,2,2S13.103,60,12,60z" />
+                     <path
+                        d="M34,58c0-2.206-1.794-4-4-4s-4,1.794-4,4s1.794,4,4,4S34,60.206,34,58z M28,58c0-1.103,0.897-2,2-2s2,0.897,2,2  s-0.897,2-2,2S28,59.103,28,58z" />
+                     <path
+                        d="M51,58c0-2.206-1.794-4-4-4s-4,1.794-4,4s1.794,4,4,4S51,60.206,51,58z M45,58c0-1.103,0.897-2,2-2s2,0.897,2,2  s-0.897,2-2,2S45,59.103,45,58z" />
+                     <rect x="60" y="30" width="2" height="2" />
+                     <path
+                        d="M60,40H12c-0.553,0-1,0.447-1,1v7l-1.2-1.6L8.2,47.6l3,4c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l3-4L14.2,46.4  L13,48v-6h16v6l-1.2-1.6L26.2,47.6l3,4c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l3-4L32.2,46.4L31,48v-6h15v6l-1.2-1.6  L43.2,47.6l3,4c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l3-4L49.2,46.4L48,48v-6h13c0.553,0,1-0.447,1-1v-7h-2V40z" />
+                  </svg>
+                  <h5>Intra logistics</h5>
+               </div>
+               <div class="col-md-2 col-sm-6 col-xs-6 text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
+                     y="0px" viewBox="0 0 64 80" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                     <g>
+                        <rect x="15.067" y="37.269" transform="matrix(0.9702 -0.2424 0.2424 0.9702 -8.7978 5.0365)"
+                           width="2" height="2" />
+                        <rect x="16.037" y="41.149" transform="matrix(0.9702 -0.2422 0.2422 0.9702 -9.701 5.3811)"
+                           width="2" height="2" />
+                        <rect x="17.008" y="45.03" transform="matrix(0.9702 -0.2422 0.2422 0.9702 -10.6119 5.7316)"
+                           width="2" height="2" />
+                        <path
+                           d="M14,18c-1.654,0-3,1.346-3,3s1.346,3,3,3s3-1.346,3-3S15.654,18,14,18z M14,22c-0.551,0-1-0.449-1-1s0.449-1,1-1   s1,0.449,1,1S14.551,22,14,22z" />
+                        <path
+                           d="M45,33c1.654,0,3-1.346,3-3s-1.346-3-3-3s-3,1.346-3,3S43.346,33,45,33z M45,29c0.551,0,1,0.449,1,1s-0.449,1-1,1   s-1-0.449-1-1S44.449,29,45,29z" />
+                        <path
+                           d="M63.114,39.848L55.521,29h-3.6c-0.135-0.935-0.453-1.809-0.92-2.587V7h-2V5c0-2.206-1.794-4-4-4s-4,1.794-4,4v2h-2v5H29v-2   H7c-3.309,0-6,2.691-6,6s2.691,6,6,6h0.08c0.282,1.956,1.369,3.652,2.92,4.736V33H8.465l-4.589,6.883l4.029,10.072l-2.556,5.111   C2.902,55.389,1,57.466,1,60v3h30v-3c0-2.534-1.902-4.611-4.349-4.934l-2.708-5.415L19.781,33H18v-6.264   c1.551-1.085,2.638-2.781,2.92-4.736H29v-2h10v6.413c-0.467,0.778-0.786,1.652-0.92,2.587h-3.6l-7.594,10.848L33,57.171V60   c0,1.654,1.346,3,3,3h18c1.654,0,3-1.346,3-3v-2.829L63.114,39.848z M43,45h4v4h-4V45z M36,43c-0.352,0-0.686,0.072-1,0.184v-2.675   l6.297-4.58C42.373,36.604,43.64,37,45,37s2.627-0.396,3.703-1.071L55,40.509v2.675C54.686,43.072,54.352,43,54,43H36z M45,25   c2.757,0,5,2.243,5,5s-2.243,5-5,5s-5-2.243-5-5S42.243,25,45,25z M60.886,40.152L57,51.162V46v-6.509l-6.732-4.896   c0.867-0.993,1.455-2.23,1.652-3.595h2.559L60.886,40.152z M43,5c0-1.103,0.897-2,2-2s2,0.897,2,2v2h-4V5z M49,9v15.264   C47.865,23.47,46.487,23,45,23s-2.865,0.47-4,1.264V9H49z M29,60v1H3v-1c0-1.654,1.346-3,3-3h20C27.654,57,29,58.346,29,60z    M24.388,55H7.618l2-4h12.787L24.388,55z M21.719,49H9.677l-3.553-8.883L9.535,35h8.684L21.719,49z M16,33h-4v-5.295   C12.634,27.895,13.305,28,14,28s1.366-0.105,2-0.295V33z M14,26c-2.757,0-5-2.243-5-5s2.243-5,5-5s5,2.243,5,5S16.757,26,14,26z    M27,20h-6.08c-0.488-3.387-3.401-6-6.92-6s-6.432,2.613-6.92,6H7c-2.206,0-4-1.794-4-4s1.794-4,4-4h20V20z M29,18v-4h10v4H29z    M35.521,31h2.559c0.197,1.365,0.785,2.602,1.652,3.595L33,39.491V46v5.162l-3.886-11.01L35.521,31z M47,61h-4v-4h4V61z M55,60   c0,0.551-0.449,1-1,1h-5v-6h-8v6h-5c-0.551,0-1-0.449-1-1v-6v-8c0-0.551,0.449-1,1-1h5v6h8v-6h5c0.551,0,1,0.449,1,1v8V60z" />
+                        <rect x="45" y="19" width="2" height="2" />
+                        <rect x="45" y="11" width="2" height="2" />
+                        <rect x="45" y="15" width="2" height="2" />
                      </g>
-                  </g>
-               </svg>
-               <h5>Industrial Robots</h5>
-            </div>
-            <div class="col-md-2 col-sm-6 col-xs-6 text-center">
-               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
-                  y="0px" viewBox="0 0 24 30" enable-background="new 0 0 24 24" xml:space="preserve">
-                  <g>
-                     <path
-                        d="M21.284,10.109c0.122-0.338,0.054-0.73-0.216-1.001l-1.177-1.177c-0.057-0.057-0.127-0.088-0.193-0.127   c0.149-0.348,0.084-0.766-0.2-1.05l-1.177-1.177c-0.372-0.371-0.978-0.37-1.35,0l-0.132,0.132   c-0.031-0.043-0.049-0.093-0.087-0.132L15.575,4.4c-0.372-0.371-0.978-0.371-1.35,0l-0.918,0.917   c-0.569-0.417-1.159-0.443-1.885-0.332L11.01,5.043C10.27,5.147,9.646,5.25,9.177,5.406L9.05,5.293   C9.49,3.746,8.936,1.997,7.643,0.966c-1.355-1.08-3.23-1.171-4.689-0.245C2.941,0.727,2.93,0.734,2.918,0.741   c-0.005,0.003-0.01,0.005-0.014,0.008C2.901,0.75,2.901,0.754,2.899,0.756c-0.06,0.043-0.111,0.1-0.135,0.176   C2.761,0.941,2.763,0.951,2.761,0.96C2.758,0.971,2.759,0.979,2.757,0.99C2.746,1.071,2.76,1.149,2.8,1.216   c0.003,0.005,0,0.012,0.003,0.018C2.809,1.242,2.82,1.242,2.827,1.249c0.042,0.054,0.095,0.1,0.165,0.122l0.028,0.009   c0.003,0.001,0.006,0.002,0.009,0.003l2,0.635l0.014,2.077L3.071,4.751L1.817,3.048C1.813,3.044,1.807,3.044,1.803,3.04   C1.756,2.982,1.695,2.935,1.618,2.917c-0.007-0.002-0.014,0-0.021-0.001c-0.01-0.002-0.017,0-0.027-0.001   C1.484,2.905,1.402,2.925,1.335,2.973c-0.002,0.001-0.005,0-0.007,0.002c-0.004,0.003-0.003,0.008-0.006,0.01   C1.262,3.032,1.214,3.095,1.195,3.173c-0.002,0.01-0.003,0.02-0.005,0.029c0,0.001,0,0.002,0,0.003   C0.835,4.72,1.387,6.321,2.606,7.292c0.76,0.605,1.667,0.915,2.565,0.915c0.551,0,1.097-0.124,1.607-0.36l0.851,0.802   C7.608,8.883,7.594,9.111,7.594,9.311c0,1.709-0.257,2.762-0.432,2.936l-0.504,0.504l-0.502-0.502c-0.15-0.148-0.416-0.148-0.565,0   l-3.136,3.138c-0.156,0.156-0.156,0.41,0,0.566l7.847,7.844c0.075,0.074,0.177,0.117,0.283,0.117s0.208-0.043,0.283-0.117   l3.136-3.138c0.156-0.156,0.156-0.41,0-0.566l-0.5-0.5l0.502-0.501c0.19-0.19,0.576-0.188,1.03-0.177   c0.657,0.009,1.47,0.022,2.106-0.606l0.327-0.323l1.408,1.334c0.309,0.287,0.708,0.439,1.144,0.439   c0.068,0,0.137-0.004,0.207-0.012c0.492-0.054,0.959-0.294,1.316-0.677c0.75-0.807,0.773-2.008,0.042-2.688l-1.353-1.164   l2.405-2.405c0.372-0.372,0.372-0.979,0-1.351L21.284,10.109z M19.325,8.498l1.177,1.176c0.061,0.061,0.061,0.16,0,0.22   l-2.747,2.746l-0.004,0.004c-0.06,0.059-0.158,0.06-0.217,0.002l-1.092-1.081c0.736-0.2,1.362-0.681,1.577-1.245   c0.056-0.147,0.021-0.313-0.091-0.425l-0.11-0.11l1.287-1.287C19.166,8.436,19.264,8.437,19.325,8.498z M16.752,6.928l0.785-0.785   c0.061-0.062,0.159-0.061,0.219,0l1.177,1.177c0.061,0.061,0.061,0.158,0,0.22l-0.39,0.391c0,0-0.001,0.001-0.001,0.001   l-1.287,1.287l-1.396-1.396l0.893-0.893C16.751,6.929,16.752,6.929,16.752,6.928z M14.79,4.966c0.061-0.062,0.159-0.061,0.219,0   l1.177,1.176c0.061,0.061,0.061,0.16,0,0.22l-0.895,0.894L13.896,5.86L14.79,4.966z M7.166,7.113   C7.005,6.96,6.752,6.969,6.601,7.129C6.59,7.14,6.587,7.154,6.578,7.166C5.444,7.741,4.104,7.591,3.042,6.745   C2.254,6.117,1.808,5.171,1.788,4.19l0.871,1.181C2.726,5.461,2.832,5.512,2.94,5.512c0.037,0,0.074-0.006,0.11-0.018l2.454-0.815   c0.144-0.048,0.241-0.183,0.24-0.334L5.727,1.759c-0.001-0.152-0.1-0.286-0.244-0.332L4.05,0.972   c1.06-0.362,2.249-0.182,3.156,0.541C8.332,2.41,8.795,3.958,8.333,5.279C8.327,5.298,8.329,5.317,8.326,5.336   C8.254,5.492,8.283,5.681,8.417,5.8L8.46,5.838c-0.315,0.381-0.551,1.09-0.695,1.839L7.166,7.113z M10.584,22.948l-7.281-7.278   l2.57-2.572l7.281,7.278L10.584,22.948z M16.58,17.739c-0.398,0.393-0.945,0.385-1.532,0.376c-0.582-0.016-1.18-0.02-1.608,0.41   l-0.502,0.502l-5.713-5.711l0.503-0.503c0.618-0.617,0.666-2.837,0.666-3.502c0-1.349,0.436-2.807,0.71-3.008   c0.31-0.228,1.337-0.372,2.018-0.467l0.42-0.061c0.757-0.114,1.109-0.03,1.506,0.367l4.1,4.1c-0.194,0.242-0.559,0.489-1.016,0.587   c-0.447,0.094-1.111,0.079-1.733-0.545l-1.569-1.568c0,0,0,0,0-0.001c-0.156-0.156-0.409-0.157-0.565,0   c-0.156,0.156-0.156,0.409,0,0.565l0,0.001c1.266,1.267,1.075,3.852-0.393,5.319c-0.156,0.156-0.156,0.41,0,0.566   c0.078,0.078,0.18,0.117,0.283,0.117s0.205-0.039,0.283-0.117c0.306-0.306,0.562-0.651,0.773-1.019l3.671,3.294L16.58,17.739z    M21.052,16.979c0.397,0.369,0.354,1.063-0.095,1.547c-0.225,0.242-0.515,0.394-0.816,0.427c-0.281,0.027-0.535-0.048-0.717-0.216   l-1.676-1.589c0,0,0,0,0,0s0,0,0,0l-0.017-0.016l-4.168-3.74c0.308-0.817,0.415-1.695,0.297-2.514   c0.44,0.43,0.96,0.672,1.513,0.751l1.603,1.587c0.055,0.054,0.122,0.083,0.185,0.121c-0.049,0.117-0.076,0.242-0.076,0.373   c0,0.255,0.1,0.494,0.28,0.674l1.177,1.178c0.186,0.186,0.431,0.279,0.675,0.279c0.138,0,0.272-0.037,0.399-0.096L21.052,16.979z    M22.072,12.247l-2.707,2.708c-0.009,0.008-0.02,0.012-0.028,0.022c-0.004,0.004-0.005,0.01-0.008,0.014l-0.003,0.003   c-0.061,0.06-0.159,0.062-0.219,0l-1.178-1.178c-0.039-0.039-0.045-0.085-0.045-0.108c0-0.024,0.006-0.07,0.045-0.109l0.393-0.393   c0,0,0.001-0.001,0.001-0.001l2.463-2.462l1.287,1.287C22.132,12.088,22.132,12.187,22.072,12.247z" />
-                     <path
-                        d="M10.958,21.287c0.078,0.078,0.18,0.117,0.283,0.117s0.205-0.039,0.283-0.117c0.156-0.156,0.156-0.41,0-0.566l-0.785-0.784   c-0.156-0.156-0.409-0.156-0.565,0s-0.156,0.41,0,0.566L10.958,21.287z" />
-                     <path
-                        d="M19.452,18.111l0.172,0.178c0.172,0.179,0.407,0.281,0.644,0.281c0.207,0,0.399-0.077,0.544-0.216   c0.148-0.144,0.232-0.339,0.236-0.552c0.004-0.232-0.09-0.465-0.257-0.638l-0.173-0.18c-0.322-0.334-0.881-0.364-1.188-0.064   C19.108,17.231,19.117,17.764,19.452,18.111z M20.271,17.769l-0.003,0.4V17.77l-0.227-0.23L20.271,17.769z" />
-                  </g>
-               </svg>
-               <h5>Industrial Material</h>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- End Service -->
-    <!-- ======= Gallery Section ======= -->
-   <section id="gallery" class="portfolio"> 
-       <div class="container"> 
-         <div class="section-title">
-             <h2>Gallery</h2>
-          </div>
-          <div class="row gallery-container grid-layout"> 
-             <div class="span-2-1 grid-item"><img src="assets/img/gallery/img-1.jpg" /></div> 
-            <div class="span-1-1 grid-item"><img src="assets/img/gallery/img-2.jpg" /></div> 
-             
-            <div class="span-1-2 grid-item"><img src="assets/img/gallery/img-3.jpg" /></div> 
-			<div class="span-1-1 grid-item"><img src="assets/img/gallery/img-4.jpg" /></div>
-             <div class="span-2-1 grid-item"><img src="assets/img/gallery/img-5.jpg" /></div>
-			  <div class="span-2-1 grid-item"><img src="assets/img/gallery/img-6.jpg" /></div>
-			  <div class="span-1-1 grid-item"><img src="assets/img/gallery/img-7.jpg" /></div>
-			  		 
-					  <div class="span-1-2 grid-item"><img src="assets/img/gallery/img-8.jpg" /></div>
-					  <div class="span-1-2 grid-item"><img src="assets/img/gallery/img-9.jpg" /></div>
-					  
-					  <div class="span-1-2 grid-item"><img src="assets/img/gallery/img-10.jpg" /></div>
-					  <div class="span-1-2 grid-item"><img src="assets/img/gallery/img-11.jpg" /></div>
-					  <div class="span-1-1 grid-item"><img src="assets/img/gallery/img-12.jpg" /></div>
-          </div> 
-       </div>
-   </section> 
-   <!-- End Gallery Section -->
-   <!-- ======= Contact Section ======= -->
-   <section id="contact-us" class="contact">
-      <div class="container">
-         <div class="section-title">
-            <h2>Contact us</h2>
-         </div>
-         <div>
-            <iframe
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.031929993289!2d73.21122621495769!3d22.465434385238122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDI3JzU1LjYiTiA3M8KwMTInNDguMyJF!5e0!3m2!1sen!2sin!4v1595829679853!5m2!1sen!2sin"
-               frameborder="0" allowfullscreen style="border:0; width: 100%; height: 270px;"></iframe>
-         </div>
-         <div class="row mt-5">
-            <div class="col-lg-4">
-               <div class="info">
-                  <div class="address">
-                     <i class="icofont-google-map"></i>
-                     <h4>Location:</h4>
-                     <p>68, TDT Mega Industrial Park, Lamdapura</p>
-                  </div>
-                  <div class="email">
-                     <i class="icofont-envelope"></i>
-                     <h4>Email:</h4>
-                     <p><a href="mailto:vaspautomation@gmail.com"> vaspautomation@gmail.com</a></p>
-                  </div>
-                  <div class="phone">
-                     <i class="icofont-phone"></i>
-                     <h4>Call:</h4>
-                     <p> <a href="tel:9313794379"> +91 93137 94379</a></p>
-                  </div>
+                  </svg>
+                  <h5>Industrial Robots</h5>
+               </div>
+               <div class="col-md-2 col-sm-6 col-xs-6 text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
+                     y="0px" viewBox="0 0 24 30" enable-background="new 0 0 24 24" xml:space="preserve">
+                     <g>
+                        <path
+                           d="M21.284,10.109c0.122-0.338,0.054-0.73-0.216-1.001l-1.177-1.177c-0.057-0.057-0.127-0.088-0.193-0.127   c0.149-0.348,0.084-0.766-0.2-1.05l-1.177-1.177c-0.372-0.371-0.978-0.37-1.35,0l-0.132,0.132   c-0.031-0.043-0.049-0.093-0.087-0.132L15.575,4.4c-0.372-0.371-0.978-0.371-1.35,0l-0.918,0.917   c-0.569-0.417-1.159-0.443-1.885-0.332L11.01,5.043C10.27,5.147,9.646,5.25,9.177,5.406L9.05,5.293   C9.49,3.746,8.936,1.997,7.643,0.966c-1.355-1.08-3.23-1.171-4.689-0.245C2.941,0.727,2.93,0.734,2.918,0.741   c-0.005,0.003-0.01,0.005-0.014,0.008C2.901,0.75,2.901,0.754,2.899,0.756c-0.06,0.043-0.111,0.1-0.135,0.176   C2.761,0.941,2.763,0.951,2.761,0.96C2.758,0.971,2.759,0.979,2.757,0.99C2.746,1.071,2.76,1.149,2.8,1.216   c0.003,0.005,0,0.012,0.003,0.018C2.809,1.242,2.82,1.242,2.827,1.249c0.042,0.054,0.095,0.1,0.165,0.122l0.028,0.009   c0.003,0.001,0.006,0.002,0.009,0.003l2,0.635l0.014,2.077L3.071,4.751L1.817,3.048C1.813,3.044,1.807,3.044,1.803,3.04   C1.756,2.982,1.695,2.935,1.618,2.917c-0.007-0.002-0.014,0-0.021-0.001c-0.01-0.002-0.017,0-0.027-0.001   C1.484,2.905,1.402,2.925,1.335,2.973c-0.002,0.001-0.005,0-0.007,0.002c-0.004,0.003-0.003,0.008-0.006,0.01   C1.262,3.032,1.214,3.095,1.195,3.173c-0.002,0.01-0.003,0.02-0.005,0.029c0,0.001,0,0.002,0,0.003   C0.835,4.72,1.387,6.321,2.606,7.292c0.76,0.605,1.667,0.915,2.565,0.915c0.551,0,1.097-0.124,1.607-0.36l0.851,0.802   C7.608,8.883,7.594,9.111,7.594,9.311c0,1.709-0.257,2.762-0.432,2.936l-0.504,0.504l-0.502-0.502c-0.15-0.148-0.416-0.148-0.565,0   l-3.136,3.138c-0.156,0.156-0.156,0.41,0,0.566l7.847,7.844c0.075,0.074,0.177,0.117,0.283,0.117s0.208-0.043,0.283-0.117   l3.136-3.138c0.156-0.156,0.156-0.41,0-0.566l-0.5-0.5l0.502-0.501c0.19-0.19,0.576-0.188,1.03-0.177   c0.657,0.009,1.47,0.022,2.106-0.606l0.327-0.323l1.408,1.334c0.309,0.287,0.708,0.439,1.144,0.439   c0.068,0,0.137-0.004,0.207-0.012c0.492-0.054,0.959-0.294,1.316-0.677c0.75-0.807,0.773-2.008,0.042-2.688l-1.353-1.164   l2.405-2.405c0.372-0.372,0.372-0.979,0-1.351L21.284,10.109z M19.325,8.498l1.177,1.176c0.061,0.061,0.061,0.16,0,0.22   l-2.747,2.746l-0.004,0.004c-0.06,0.059-0.158,0.06-0.217,0.002l-1.092-1.081c0.736-0.2,1.362-0.681,1.577-1.245   c0.056-0.147,0.021-0.313-0.091-0.425l-0.11-0.11l1.287-1.287C19.166,8.436,19.264,8.437,19.325,8.498z M16.752,6.928l0.785-0.785   c0.061-0.062,0.159-0.061,0.219,0l1.177,1.177c0.061,0.061,0.061,0.158,0,0.22l-0.39,0.391c0,0-0.001,0.001-0.001,0.001   l-1.287,1.287l-1.396-1.396l0.893-0.893C16.751,6.929,16.752,6.929,16.752,6.928z M14.79,4.966c0.061-0.062,0.159-0.061,0.219,0   l1.177,1.176c0.061,0.061,0.061,0.16,0,0.22l-0.895,0.894L13.896,5.86L14.79,4.966z M7.166,7.113   C7.005,6.96,6.752,6.969,6.601,7.129C6.59,7.14,6.587,7.154,6.578,7.166C5.444,7.741,4.104,7.591,3.042,6.745   C2.254,6.117,1.808,5.171,1.788,4.19l0.871,1.181C2.726,5.461,2.832,5.512,2.94,5.512c0.037,0,0.074-0.006,0.11-0.018l2.454-0.815   c0.144-0.048,0.241-0.183,0.24-0.334L5.727,1.759c-0.001-0.152-0.1-0.286-0.244-0.332L4.05,0.972   c1.06-0.362,2.249-0.182,3.156,0.541C8.332,2.41,8.795,3.958,8.333,5.279C8.327,5.298,8.329,5.317,8.326,5.336   C8.254,5.492,8.283,5.681,8.417,5.8L8.46,5.838c-0.315,0.381-0.551,1.09-0.695,1.839L7.166,7.113z M10.584,22.948l-7.281-7.278   l2.57-2.572l7.281,7.278L10.584,22.948z M16.58,17.739c-0.398,0.393-0.945,0.385-1.532,0.376c-0.582-0.016-1.18-0.02-1.608,0.41   l-0.502,0.502l-5.713-5.711l0.503-0.503c0.618-0.617,0.666-2.837,0.666-3.502c0-1.349,0.436-2.807,0.71-3.008   c0.31-0.228,1.337-0.372,2.018-0.467l0.42-0.061c0.757-0.114,1.109-0.03,1.506,0.367l4.1,4.1c-0.194,0.242-0.559,0.489-1.016,0.587   c-0.447,0.094-1.111,0.079-1.733-0.545l-1.569-1.568c0,0,0,0,0-0.001c-0.156-0.156-0.409-0.157-0.565,0   c-0.156,0.156-0.156,0.409,0,0.565l0,0.001c1.266,1.267,1.075,3.852-0.393,5.319c-0.156,0.156-0.156,0.41,0,0.566   c0.078,0.078,0.18,0.117,0.283,0.117s0.205-0.039,0.283-0.117c0.306-0.306,0.562-0.651,0.773-1.019l3.671,3.294L16.58,17.739z    M21.052,16.979c0.397,0.369,0.354,1.063-0.095,1.547c-0.225,0.242-0.515,0.394-0.816,0.427c-0.281,0.027-0.535-0.048-0.717-0.216   l-1.676-1.589c0,0,0,0,0,0s0,0,0,0l-0.017-0.016l-4.168-3.74c0.308-0.817,0.415-1.695,0.297-2.514   c0.44,0.43,0.96,0.672,1.513,0.751l1.603,1.587c0.055,0.054,0.122,0.083,0.185,0.121c-0.049,0.117-0.076,0.242-0.076,0.373   c0,0.255,0.1,0.494,0.28,0.674l1.177,1.178c0.186,0.186,0.431,0.279,0.675,0.279c0.138,0,0.272-0.037,0.399-0.096L21.052,16.979z    M22.072,12.247l-2.707,2.708c-0.009,0.008-0.02,0.012-0.028,0.022c-0.004,0.004-0.005,0.01-0.008,0.014l-0.003,0.003   c-0.061,0.06-0.159,0.062-0.219,0l-1.178-1.178c-0.039-0.039-0.045-0.085-0.045-0.108c0-0.024,0.006-0.07,0.045-0.109l0.393-0.393   c0,0,0.001-0.001,0.001-0.001l2.463-2.462l1.287,1.287C22.132,12.088,22.132,12.187,22.072,12.247z" />
+                        <path
+                           d="M10.958,21.287c0.078,0.078,0.18,0.117,0.283,0.117s0.205-0.039,0.283-0.117c0.156-0.156,0.156-0.41,0-0.566l-0.785-0.784   c-0.156-0.156-0.409-0.156-0.565,0s-0.156,0.41,0,0.566L10.958,21.287z" />
+                        <path
+                           d="M19.452,18.111l0.172,0.178c0.172,0.179,0.407,0.281,0.644,0.281c0.207,0,0.399-0.077,0.544-0.216   c0.148-0.144,0.232-0.339,0.236-0.552c0.004-0.232-0.09-0.465-0.257-0.638l-0.173-0.18c-0.322-0.334-0.881-0.364-1.188-0.064   C19.108,17.231,19.117,17.764,19.452,18.111z M20.271,17.769l-0.003,0.4V17.77l-0.227-0.23L20.271,17.769z" />
+                     </g>
+                  </svg>
+                  <h5>
+                  Industrial Material</h>
                </div>
             </div>
-            <div class="col-lg-8 mt-5 mt-lg-0">
-               <form role="form" class="php-email-form">
-                  <div class="form-row">
-                     <div class="col-md-6 form-group">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                           data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                        <div class="validate"></div>
-                     </div>
-                     <div class="col-md-6 form-group">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                           data-rule="email" data-msg="Please enter a valid email" />
-                        <div class="validate"></div>
-                     </div>
-                  </div>
-                  <div class="form-group">
-                     <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                        data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                     <div class="validate"></div>
-                  </div>
-                  <div class="form-group">
-                     <textarea class="form-control" name="message" rows="5" data-rule="required"
-                        data-msg="Please write something for us" placeholder="Message"></textarea>
-                     <div class="validate"></div>
-                  </div>
-                  <div class="mb-3">
-                     <div class="loading">Loading</div>
-                     <div class="error-message"></div>
-                     <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-                  <div class="text-center"><button type="submit" onclick="sendEmail()">Send Message</button></div>
-               </form>
-            </div>
          </div>
-      </div>
-   </section>
-   <!-- End Contact Section -->
-   </section><!-- End Portfolio Section -->
-   <!-- ======= Footer ======= -->
-   <footer id="footer">
-      <div class="footer-top">
+      </section>
+      <!-- End Service -->
+      <!-- ======= Gallery Section ======= -->
+      <section id="gallery" class="portfolio">
          <div class="container">
-            <div class="row">
-               <div class="col-lg-3 col-md-6">
-                  <div class="footer-info">
-                     <h3>Vasp Automation</h3>
-                     <p>
-                        68, TDT Mega Industrial Park <br>
-                        Lamdapura <br><br>
-                        <strong>Phone:</strong><a href="tel:9313794379"> +91 93137 94379</a><br>
-                        <strong>Email:</strong><a href="mailto:vaspautomation@gmail.com">
-                           vaspautomation@gmail.com</a><br>
-                     </p>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-6">
-                  <div class="footer-info">
-                     <div class="social-links mt-3">
-                        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-                        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
-                        <a href="tel:9313794379" class="call"><i class="icofont-ui-call"></i></a>
-                        <a href="mailto:vaspautomation@gmail.com" class="msg"><i class="icofont-ui-message"></i></a>
+            <div class="section-title">
+               <h2>Gallery</h2>
+            </div>
+            <div class="row gallery-container grid-layout">
+               <div class="span-2-1 grid-item"><img src="assets/img/gallery/img-1.jpg" /></div>
+               <div class="span-1-1 grid-item"><img src="assets/img/gallery/img-2.jpg" /></div>
+               <div class="span-1-2 grid-item"><img src="assets/img/gallery/img-3.jpg" /></div>
+               <div class="span-1-1 grid-item"><img src="assets/img/gallery/img-4.jpg" /></div>
+               <div class="span-2-1 grid-item"><img src="assets/img/gallery/img-5.jpg" /></div>
+               <div class="span-2-1 grid-item"><img src="assets/img/gallery/img-6.jpg" /></div>
+               <div class="span-1-1 grid-item"><img src="assets/img/gallery/img-7.jpg" /></div>
+               <div class="span-1-2 grid-item"><img src="assets/img/gallery/img-8.jpg" /></div>
+               <div class="span-1-2 grid-item"><img src="assets/img/gallery/img-9.jpg" /></div>
+               <div class="span-1-2 grid-item"><img src="assets/img/gallery/img-10.jpg" /></div>
+               <div class="span-1-2 grid-item"><img src="assets/img/gallery/img-11.jpg" /></div>
+               <div class="span-1-1 grid-item"><img src="assets/img/gallery/img-12.jpg" /></div>
+            </div>
+         </div>
+      </section>
+      <!-- End Gallery Section -->
+      <!-- ======= Contact Section ======= -->
+      <section id="contact-us" class="contact">
+         <div class="container">
+            <div class="section-title">
+               <h2>Contact us</h2>
+            </div>
+            <div>
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.031929993289!2d73.21122621495769!3d22.465434385238122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDI3JzU1LjYiTiA3M8KwMTInNDguMyJF!5e0!3m2!1sen!2sin!4v1595829679853!5m2!1sen!2sin"
+                  frameborder="0" allowfullscreen style="border:0; width: 100%; height: 270px;"></iframe>
+            </div>
+            <div class="row mt-5">
+               <div class="col-lg-4">
+                  <div class="info">
+                     <div class="address">
+                        <i class="icofont-google-map"></i>
+                        <h4>Location:</h4>
+                        <p>68, TDT Mega Industrial Park, Lamdapura</p>
+                     </div>
+                     <div class="email">
+                        <i class="icofont-envelope"></i>
+                        <h4>Email:</h4>
+                        <p><a href="mailto:vaspautomation@gmail.com"> sales@vaspautomation.com</a></p>
+                     </div>
+                     <div class="phone">
+                        <i class="icofont-phone"></i>
+                        <h4>Call:</h4>
+                        <p> <a href="tel:9313794379"> +91 93137 94379</a></p>
                      </div>
                   </div>
                </div>
-               <div class="col-lg-3 col-md-6 footer-links">
-                  <h4>Useful Links</h4>
-                  <ul>
-                     <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
-		     <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
-                     <li><i class="bx bx-chevron-right"></i> <a href="#products">Products</a></li>					 
-                     <li><i class="bx bx-chevron-right"></i> <a href="#about-us">About us</a></li>
-                     <li><i class="bx bx-chevron-right"></i> <a href="#contact-us">Contact</a></li>
-                  </ul>
-               </div>
-               <div class="col-lg-3 col-md-6 footer-links">
-                  <h4>Our Services</h4>
-                  <ul>
-                     <li>Conveyors</li>
-                     <li>Packaging</li>
-                     <li>Factory Automation</li>
-                     <li>Intra logistics</li>
-                     <li>Industrial Robots</li>
-		     <li>Industrial Material</li>
-                  </ul>
+               <div class="col-lg-8 mt-5 mt-lg-0">
+                  <form role="form" class="php-email-form">
+                     <div class="form-row">
+                        <div class="col-md-6 form-group">
+                           <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                              data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                           <div class="validate"></div>
+                        </div>
+                        <div class="col-md-6 form-group">
+                           <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                              data-rule="email" data-msg="Please enter a valid email" />
+                           <div class="validate"></div>
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                           data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                        <div class="validate"></div>
+                     </div>
+                     <div class="form-group">
+                        <textarea class="form-control" name="message" rows="5" data-rule="required"
+                           data-msg="Please write something for us" placeholder="Message"></textarea>
+                        <div class="validate"></div>
+                     </div>
+                     <div class="mb-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                     </div>
+                     <div class="text-center"><button type="submit" onclick="sendEmail()">Send Message</button></div>
+                  </form>
                </div>
             </div>
          </div>
-      </div>
-      <div class="container">
-         <div class="copyright">
-            &copy; Copyright <strong><span>Vasp Automation</span></strong>. All Rights Reserved
+      </section>
+      <!-- End Contact Section -->
+      </section><!-- End Portfolio Section -->
+      <!-- ======= Footer ======= -->
+      <footer id="footer">
+         <div class="footer-top">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-3 col-md-6">
+                     <div class="footer-info">
+                        <h3>Vasp Automation</h3>
+                        <p>
+                           68, TDT Mega Industrial Park <br>
+                           Lamdapura <br><br>
+                           <strong>Phone:</strong><a href="tel:9313794379"> +91 93137 94379</a><br>
+                           <strong>Email:</strong><a href="mailto:vaspautomation@gmail.com">
+                           sales@vaspautomation.com</a><br>
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="footer-info">
+                        <div class="social-links mt-3">
+                           <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                           <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+                           <a href="tel:9313794379" class="call"><i class="icofont-ui-call"></i></a>
+                           <a href="mailto:sales@vaspautomation.com" class="msg"><i class="icofont-ui-message"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 footer-links">
+                     <h4>Useful Links</h4>
+                     <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#products">Products</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#about-us">About us</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#contact-us">Contact</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-lg-3 col-md-6 footer-links">
+                     <h4>Our Services</h4>
+                     <ul>
+                        <li>Conveyors</li>
+                        <li>Packaging</li>
+                        <li>Factory Automation</li>
+                        <li>Intra logistics</li>
+                        <li>Industrial Robots</li>
+                        <li>Industrial Material</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
          </div>
-      </div>
-   </footer>
-   <!-- End Footer -->
-   <!-- Vendor JS Files -->
-   <script src="assets/vendor/jquery/jquery.min.js"></script>
-   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-   <!-- <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> -->
-   <script src="assets/vendor/php-email-form/validate.js"></script>
-   <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
-   <!-- <script src="assets/vendor/venobox/venobox.min.js"></script> -->
-   <!-- <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script> -->
-   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-   <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
-   <!-- Template Main JS File -->
-   <script src="assets/js/main.js"></script>
-</body>
-
+         <div class="container">
+            <div class="copyright">
+               &copy; Copyright <strong><span>Vasp Automation</span></strong>. All Rights Reserved
+            </div>
+         </div>
+      </footer>
+      <!-- End Footer -->
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/jquery/jquery.min.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> -->
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+      <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
+      <!-- <script src="assets/vendor/venobox/venobox.min.js"></script> -->
+      <!-- <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script> -->
+      <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+      <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+      <!-- Template Main JS File -->
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
